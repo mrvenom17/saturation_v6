@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/content/saturation_code_v6_1/orchestrator.py", line 1658, in run_all
+    ctx = acquire_city(city, registry[city], prereg, profile, clients, out_root, cache_root, log)
+  File "/content/saturation_code_v6_1/orchestrator.py", line 419, in acquire_city
+    docs, sstatus = st.get(f"docs_{k_docs}", lambda: ds.collect_documents(city, cfg, wide, sources, clients, cache_root, log),
+                    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           final=lambda v: ds.documents_complete(v[1]))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6_1/orchestrator.py", line 200, in get
+    val = fn()
+  File "/content/saturation_code_v6_1/orchestrator.py", line 419, in <lambda>
+    docs, sstatus = st.get(f"docs_{k_docs}", lambda: ds.collect_documents(city, cfg, wide, sources, clients, cache_root, log),
+                                                     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6_1/data_sources.py", line 2611, in collect_documents
+    raw_df = SOCIAL_SOURCES[name](city, cfg, t0, t1, opts, cache_dir, log)
+  File "/content/saturation_code_v6_1/data_sources.py", line 2218, in src_gdelt_bigquery
+    return _gkg_to_docs(raw, cfg["aliases"], log, city)
+  File "/content/saturation_code_v6_1/data_sources.py", line 2169, in _gkg_to_docs
+    locn = raw["V2Locations"].map(gkg_location_names)
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/series.py", line 4700, in map
+    new_values = self._map_values(arg, na_action=na_action)
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "/content/saturation_code_v6_1/data_sources.py", line 2139, in gkg_location_names
+    parts = block.split("#")
+KeyboardInterrupt

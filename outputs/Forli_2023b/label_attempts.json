@@ -1,0 +1,37 @@
+[
+  {
+    "source": "copernicus_ems",
+    "gt_tier": "A_authoritative",
+    "positives": 4287,
+    "prevalence": 0.050441821882831896,
+    "valid_cells": 84989,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 4287,
+      "prevalence": 0.045776339814844476,
+      "source": "copernicus_ems",
+      "features": 2624,
+      "point_buffer_m": 0.0,
+      "activation": "EMSR664",
+      "archives": [
+        "EMSR664_AOI01_DEL_PRODUCT_v1.zip",
+        "EMSR664_AOI01_DEL_MONIT01_v1.zip",
+        "EMSR664_AOI01_DEL_MONIT02_v2.zip",
+        "EMSR664_AOI01_DEL_MONIT03_v1.zip"
+      ],
+      "n_archives_listed": 4,
+      "layers": [
+        "EMSR664_AOI01_DEL_MONIT01_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_observedEventA_v1",
+        "EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1",
+        "EMSR664_AOI01_DEL_MONIT02_observedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_observedEventA_v2",
+        "EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2",
+        "EMSR664_AOI01_DEL_MONIT03_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_observedEventA_v1",
+        "EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1",
+        "EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1.shp:EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1"
+      ],
+      "valid_cells": 84989,
+      "gt_tier": "A_authoritative"
+    }
+  }
+]

@@ -1,0 +1,5 @@
+city,source,kind,ref,url,licence,verified_when_written,status,detail
+TaquariValley_2024,copernicus_ems,api,"EMSR720 (AOIs Guaporé, Encantado, Roca Sales, Das Antas, Santa Tereza)",https://rapidmapping.emergency.copernicus.eu/backend/dashboard-api/public-activations/?code=EMSR720,"Copernicus EMS — free, attribution required",API fetched,ok,65 kB
+Houston_SanJacinto_2017,usgs_sciencebase,api,"USGS 10.5066/F7VH5N3N, San Jacinto child 5aa023ebe4b0b1c392e6881b",https://www.sciencebase.gov/catalog/item/5aa023ebe4b0b1c392e6881b?format=json,USGS — public domain,via data.usgs.gov (ScienceBase blocks automated reads),ok,20 kB
+Houston_SanJacinto_2017,usgs_stn,api,"STN event 180 (2017 Harvey), Harris + Montgomery counties",https://stn.wim.usgs.gov/STNServices/HWMs/FilteredHWMs.json?Event=180&States=TX&County=Harris%20County,USGS — public domain,API fetched,ok,792 kB
+Jakarta_2020,petabencana,api,reports archive (crowdsourced),https://data.petabencana.id/reports/archive?start=2019-12-31T00:00:00%2B0000&end=2020-01-04T00:00:00%2B0000&geoformat=geojson,CC BY-NC 4.0,endpoint fetched (no key),ok,180 kB

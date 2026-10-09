@@ -1,0 +1,11 @@
+city,acquired,complete,mentions_primary,signal_type,localisable,pending,error
+Chennai_2015,True,True,3009,news-media signal,True,,
+Valencia_2024,True,True,1710,news-media signal,False,,
+EmiliaRomagna_2023a,True,True,245,news-media signal,False,,
+Forli_2023b,True,True,284,news-media signal,False,,
+York_2015,True,True,5,news-media signal,False,,
+Carlisle_2015,True,True,2,news-media signal,False,,
+PortoAlegre_2024,True,True,80,news-media signal,False,,
+TaquariValley_2024,True,True,48,news-media signal,False,,
+Houston_SanJacinto_2017,True,True,481,news-media signal,False,,
+Jakarta_2020,True,True,3747,news-media signal,True,,

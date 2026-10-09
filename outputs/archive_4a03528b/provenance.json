@@ -1,0 +1,3898 @@
+{
+  "prereg_sha256": "5e1633391bbc99bb56ea3fb24368d7d4fd757696b9517a8839f7bcb8ef613e3d",
+  "profile": "full",
+  "started_utc": "2026-10-02T06:03:56.473894",
+  "cities": {
+    "Chennai_2015": {
+      "city": "Chennai_2015",
+      "event_date": "2015-12-02",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "a9aa5a577a",
+        "physical": "beaab38215",
+        "labels": "ea10f0be23"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32644",
+        "res": 100.0,
+        "x0": 404500.0,
+        "y1": 1463900.0,
+        "nr": 400,
+        "nc": 251
+      },
+      "n_cells": 41919,
+      "physical_meta": {
+        "s1_event_scenes": 1
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "file_url:nrsc",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 9404,
+        "prevalence": 0.22433741262911805,
+        "source": "canonical_gpkg",
+        "features": 2009,
+        "point_buffer_m": 0.0,
+        "frozen_file": "Chennai_2015_labels.gpkg",
+        "sha256": "4c6bfc0daccaf829",
+        "frozen_source": "file_url:nrsc",
+        "features_in_bbox": 2009,
+        "gt_tier": "A_authoritative",
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 9404,
+            "prevalence": 0.22433741262911805,
+            "valid_cells": 41919,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 9404,
+              "prevalence": 0.22433741262911805,
+              "source": "canonical_gpkg",
+              "features": 2009,
+              "point_buffer_m": 0.0,
+              "frozen_file": "Chennai_2015_labels.gpkg",
+              "sha256": "4c6bfc0daccaf829",
+              "frozen_source": "file_url:nrsc",
+              "features_in_bbox": 2009,
+              "gt_tier": "A_authoritative"
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 8992,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 111,
+          "reddit_arcticshift": 606,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 6957,
+          "reddit_arcticshift": 597,
+          "google_news_rss": 109
+        },
+        "kept_total": 7663
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "IN"
+        ],
+        "places_inside": 206,
+        "self_features_excluded": 0,
+        "self_names": [
+          "chennai",
+          "greater chennai",
+          "madras"
+        ],
+        "gazetteer_names": 336,
+        "outside_towns": 120,
+        "outside_names": 172,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 336
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 172,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 3635,
+        "distinct_locations": 89,
+        "effective_locations": 19.81,
+        "top_place": "Adyar",
+        "top_share": 0.143,
+        "top5": [
+          [
+            "Adyar",
+            0.143
+          ],
+          [
+            "Saidapet",
+            0.073
+          ],
+          [
+            "Kotturpuram",
+            0.067
+          ],
+          [
+            "Kodambakkam",
+            0.053
+          ],
+          [
+            "manali",
+            0.046
+          ]
+        ],
+        "via": {
+          "gazetteer": 3545,
+          "ner+nominatim": 90
+        }
+      },
+      "social": {
+        "documents_wide_window": 7663,
+        "gazetteer_names": 336,
+        "primary": {
+          "mentions": 3029,
+          "mentions_in_grid": 3029,
+          "cells_with_signal": 41919,
+          "by_source": {
+            "gdelt_bigquery": 2953,
+            "reddit_arcticshift": 76
+          },
+          "by_resolution": {
+            "gazetteer": 2946,
+            "ner+nominatim": 83
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 8992,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 111,
+            "detail": "12s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 606,
+            "detail": "64s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 3029,
+        "distinct_locations": 83,
+        "effective_locations": 19.27,
+        "top_place": "Adyar",
+        "top_share": 0.146,
+        "top5": [
+          [
+            "Adyar",
+            0.146
+          ],
+          [
+            "Saidapet",
+            0.08
+          ],
+          [
+            "Kotturpuram",
+            0.06
+          ],
+          [
+            "Kodambakkam",
+            0.054
+          ],
+          [
+            "manali",
+            0.053
+          ]
+        ],
+        "via": {
+          "gazetteer": 2946,
+          "ner+nominatim": 83
+        },
+        "eligible": true,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:03:58",
+      "acquired_utc": "2026-09-30T10:25:24",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_reddit_arcticshift"
+      ],
+      "cells_analysed": 41140,
+      "cells_excluded": 779,
+      "data_fingerprint": "f5091bc95aad7646",
+      "label_corr_range_m": 3000.0,
+      "cv_tile_m": 2500.0,
+      "cv_tile_rule": "correlogram range 3000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": -0.0008264605644043212,
+          "ci95": [
+            -0.012037884400202732,
+            0.006792024838715951
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.0016105568181543713,
+          "ci95": [
+            -0.022680032688156316,
+            0.013435569284076267
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.004530356361882744,
+          "ci95": [
+            -0.027156567268387968,
+            0.017013140322082586
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.0022656527378224914,
+          "ci95": [
+            -0.02474315660113815,
+            0.015971748447267776
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.010111917582457773,
+          "ci95": [
+            -0.007628033297651268,
+            0.03184239950441321
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.010043495203505837,
+          "ci95": [
+            -0.019854650398835903,
+            0.003538288250520133
+          ],
+          "verdict": "inconclusive"
+        }
+      },
+      "saturation_rung_A_terrain_first": "R3_+hydrography",
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": -0.0008264605644043212,
+          "ci95": [
+            -0.012037884400202732,
+            0.006792024838715951
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.0016105568181543713,
+          "ci95": [
+            -0.022680032688156316,
+            0.013435569284076267
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.004530356361882744,
+          "ci95": [
+            -0.027156567268387968,
+            0.017013140322082586
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.0022656527378224914,
+          "ci95": [
+            -0.02474315660113815,
+            0.015971748447267776
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.010111917582457773,
+          "ci95": [
+            -0.007628033297651268,
+            0.03184239950441321
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.010043495203505837,
+          "ci95": [
+            -0.019854650398835903,
+            0.003538288250520133
+          ],
+          "verdict": "inconclusive"
+        }
+      },
+      "saturation_rung_B_surface_first": "R4_+hydrography",
+      "fold_prevalence_range": [
+        0.2041,
+        0.2965
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2015",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.8032906155601365,
+      "pipeline_version": "v6.0.0"
+    },
+    "Valencia_2024": {
+      "city": "Valencia_2024",
+      "event_date": "2024-10-30",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "4e795b1ca1",
+        "physical": "6ff3351ddc",
+        "labels": "1e4d01701d"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32630",
+        "res": 100.0,
+        "x0": 714900.0,
+        "y1": 4375800.0,
+        "nr": 228,
+        "nc": 180
+      },
+      "n_cells": 38269,
+      "physical_meta": {
+        "s1_event_scenes": 6
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 10477,
+        "prevalence": 0.2737725051608351,
+        "source": "canonical_gpkg",
+        "features": 2220,
+        "point_buffer_m": 0.0,
+        "frozen_file": "Valencia_2024_labels.gpkg",
+        "sha256": "3588371eda116f1b",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 2220,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 38269,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 10477,
+            "prevalence": 0.2737725051608351,
+            "valid_cells": 38269,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 10477,
+              "prevalence": 0.2737725051608351,
+              "source": "canonical_gpkg",
+              "features": 2220,
+              "point_buffer_m": 0.0,
+              "frozen_file": "Valencia_2024_labels.gpkg",
+              "sha256": "3588371eda116f1b",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 2220,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 38269
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 19966,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 404,
+          "reddit_arcticshift": 408,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 16100,
+          "google_news_rss": 404,
+          "reddit_arcticshift": 397
+        },
+        "kept_total": 16901
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "ES"
+        ],
+        "places_inside": 103,
+        "self_features_excluded": 0,
+        "self_names": [
+          "comunidad valenciana",
+          "comunitat valenciana",
+          "horta sud",
+          "l horta sud",
+          "valencia"
+        ],
+        "gazetteer_names": 147,
+        "outside_towns": 212,
+        "outside_names": 259,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 147
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 259,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 2312,
+        "distinct_locations": 34,
+        "effective_locations": 3.76,
+        "top_place": "Paiporta",
+        "top_share": 0.459,
+        "top5": [
+          [
+            "Paiporta",
+            0.459
+          ],
+          [
+            "Sedavi",
+            0.15
+          ],
+          [
+            "Alfafar",
+            0.128
+          ],
+          [
+            "Catarroja",
+            0.108
+          ],
+          [
+            "Picana",
+            0.063
+          ]
+        ],
+        "via": {
+          "gazetteer": 2168,
+          "ner+nominatim": 144
+        }
+      },
+      "social": {
+        "documents_wide_window": 16901,
+        "gazetteer_names": 147,
+        "primary": {
+          "mentions": 1802,
+          "mentions_in_grid": 1802,
+          "cells_with_signal": 37271,
+          "by_source": {
+            "gdelt_bigquery": 1676,
+            "google_news_rss": 64,
+            "reddit_arcticshift": 62
+          },
+          "by_resolution": {
+            "gazetteer": 1698,
+            "ner+nominatim": 104
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 19966,
+            "detail": "2s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 404,
+            "detail": "21s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 408,
+            "detail": "66s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 1802,
+        "distinct_locations": 33,
+        "effective_locations": 3.92,
+        "top_place": "Paiporta",
+        "top_share": 0.444,
+        "top5": [
+          [
+            "Paiporta",
+            0.444
+          ],
+          [
+            "Sedavi",
+            0.15
+          ],
+          [
+            "Catarroja",
+            0.128
+          ],
+          [
+            "Alfafar",
+            0.115
+          ],
+          [
+            "Picana",
+            0.073
+          ]
+        ],
+        "via": {
+          "gazetteer": 1698,
+          "ner+nominatim": 104
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:08:01",
+      "acquired_utc": "2026-09-30T10:26:19",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_google_news_rss",
+        "S_src_reddit_arcticshift"
+      ],
+      "cells_analysed": 32585,
+      "cells_excluded": 5684,
+      "data_fingerprint": "84074a89e94ad337",
+      "label_corr_range_m": 8000.0,
+      "cv_tile_m": 4000.0,
+      "cv_tile_rule": "correlogram range 8000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": 0.07695638473183328,
+          "ci95": [
+            -0.022990866056652102,
+            0.1721759407169101
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.17979501204070653,
+          "ci95": [
+            -0.06984774825851127,
+            0.33284790244642204
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.0387895044339851,
+          "ci95": [
+            -0.0028264563186442843,
+            0.10390769948041265
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.012483227420553316,
+          "ci95": [
+            -0.032777519201090226,
+            0.027838833564582763
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.0005533261160487598,
+          "ci95": [
+            -0.0218122361804849,
+            0.08051171038934843
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.12338227075606345,
+          "ci95": [
+            -0.1477190528379653,
+            -0.051111685142397466
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": 0.07695638473183328,
+          "ci95": [
+            -0.022990866056652102,
+            0.1721759407169101
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.17979501204070653,
+          "ci95": [
+            -0.06984774825851127,
+            0.33284790244642204
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.0387895044339851,
+          "ci95": [
+            -0.0028264563186442843,
+            0.10390769948041265
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.012483227420553316,
+          "ci95": [
+            -0.032777519201090226,
+            0.027838833564582763
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.0005533261160487598,
+          "ci95": [
+            -0.0218122361804849,
+            0.08051171038934843
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.12338227075606345,
+          "ci95": [
+            -0.1477190528379653,
+            -0.051111685142397466
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.2684,
+        0.466
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.6970130656385235,
+      "pipeline_version": "v6.0.0"
+    },
+    "EmiliaRomagna_2023a": {
+      "city": "EmiliaRomagna_2023a",
+      "event_date": "2023-05-03",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "d82ee58a5f",
+        "physical": "bd2ae38243",
+        "labels": "fe350fbe87"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32632",
+        "res": 100.0,
+        "x0": 706200.0,
+        "y1": 4942100.0,
+        "nr": 387,
+        "nc": 397
+      },
+      "n_cells": 143322,
+      "physical_meta": {
+        "s1_event_scenes": 3
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 2576,
+        "prevalence": 0.017973514184842523,
+        "source": "canonical_gpkg",
+        "features": 406,
+        "point_buffer_m": 0.0,
+        "frozen_file": "EmiliaRomagna_2023a_labels.gpkg",
+        "sha256": "b1dd5d01215a3660",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 406,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 19586,
+        "coverage_fraction": 0.1367,
+        "coverage_polygons": 4,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 2576,
+            "prevalence": 0.13152251608291637,
+            "valid_cells": 19586,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 2576,
+              "prevalence": 0.017973514184842523,
+              "source": "canonical_gpkg",
+              "features": 406,
+              "point_buffer_m": 0.0,
+              "frozen_file": "EmiliaRomagna_2023a_labels.gpkg",
+              "sha256": "b1dd5d01215a3660",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 406,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 19586,
+              "coverage_fraction": 0.1367,
+              "coverage_polygons": 4
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 1043,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 52,
+          "reddit_arcticshift": 74,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 973,
+          "reddit_arcticshift": 69,
+          "google_news_rss": 51
+        },
+        "kept_total": 1093
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "IT"
+        ],
+        "places_inside": 359,
+        "self_features_excluded": 0,
+        "self_names": [
+          "emilia romagna",
+          "idice",
+          "lamone",
+          "romagna",
+          "sillaro"
+        ],
+        "gazetteer_names": 411,
+        "outside_towns": 568,
+        "outside_names": 569,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 411
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 569,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 296,
+        "distinct_locations": 21,
+        "effective_locations": 5.78,
+        "top_place": "Lavezzola",
+        "top_share": 0.304,
+        "top5": [
+          [
+            "Lavezzola",
+            0.304
+          ],
+          [
+            "Faenza",
+            0.226
+          ],
+          [
+            "Castel Bolognese",
+            0.105
+          ],
+          [
+            "Bagnacavallo",
+            0.098
+          ],
+          [
+            "Conselice",
+            0.064
+          ]
+        ],
+        "via": {
+          "gazetteer": 277,
+          "ner+nominatim": 19
+        }
+      },
+      "social": {
+        "documents_wide_window": 1093,
+        "gazetteer_names": 411,
+        "primary": {
+          "mentions": 262,
+          "mentions_in_grid": 262,
+          "cells_with_signal": 114017,
+          "by_source": {
+            "gdelt_bigquery": 240,
+            "google_news_rss": 22
+          },
+          "by_resolution": {
+            "gazetteer": 245,
+            "ner+nominatim": 17
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 1043,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 52,
+            "detail": "19s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 74,
+            "detail": "9s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 262,
+        "distinct_locations": 20,
+        "effective_locations": 5.29,
+        "top_place": "Lavezzola",
+        "top_share": 0.336,
+        "top5": [
+          [
+            "Lavezzola",
+            0.336
+          ],
+          [
+            "Faenza",
+            0.225
+          ],
+          [
+            "Castel Bolognese",
+            0.107
+          ],
+          [
+            "Bagnacavallo",
+            0.076
+          ],
+          [
+            "Conselice",
+            0.061
+          ]
+        ],
+        "via": {
+          "gazetteer": 245,
+          "ner+nominatim": 17
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:11:32",
+      "acquired_utc": "2026-09-30T10:26:27",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_google_news_rss"
+      ],
+      "cells_analysed": 19566,
+      "cells_excluded": 123756,
+      "data_fingerprint": "c2b95eed9b9bc451",
+      "label_corr_range_m": 3000.0,
+      "cv_tile_m": 2500.0,
+      "cv_tile_rule": "correlogram range 3000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": -0.0060624192593920715,
+          "ci95": [
+            -0.04436338992813646,
+            0.022061926639633217
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.013678406812273563,
+          "ci95": [
+            -0.09154545857854364,
+            0.06182944113891411
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.13628173607130373,
+          "ci95": [
+            -0.1564272878025072,
+            0.018910973492451112
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.011685953504368699,
+          "ci95": [
+            -0.016646890028223785,
+            0.00954772733341116
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.008882211811179583,
+          "ci95": [
+            -0.03532048492058404,
+            0.018460740473615872
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.055017840479651414,
+          "ci95": [
+            -0.07757708492705445,
+            0.003874220596511827
+          ],
+          "verdict": "inconclusive"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": -0.0060624192593920715,
+          "ci95": [
+            -0.04436338992813646,
+            0.022061926639633217
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.013678406812273563,
+          "ci95": [
+            -0.09154545857854364,
+            0.06182944113891411
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.13628173607130373,
+          "ci95": [
+            -0.1564272878025072,
+            0.018910973492451112
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.011685953504368699,
+          "ci95": [
+            -0.016646890028223785,
+            0.00954772733341116
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.008882211811179583,
+          "ci95": [
+            -0.03532048492058404,
+            0.018460740473615872
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.055017840479651414,
+          "ci95": [
+            -0.07757708492705445,
+            0.003874220596511827
+          ],
+          "verdict": "inconclusive"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0594,
+        0.2217
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.8115762394541485,
+      "pipeline_version": "v6.0.0"
+    },
+    "Forli_2023b": {
+      "city": "Forli_2023b",
+      "event_date": "2023-05-17",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "cef2163465",
+        "physical": "18b1d715d7",
+        "labels": "e367e66aad"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32633",
+        "res": 100.0,
+        "x0": 246400.0,
+        "y1": 4917200.0,
+        "nr": 316,
+        "nc": 320
+      },
+      "n_cells": 93651,
+      "physical_meta": {
+        "s1_event_scenes": 3
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 3856,
+        "prevalence": 0.04117414656543977,
+        "source": "canonical_gpkg",
+        "features": 1991,
+        "point_buffer_m": 0.0,
+        "frozen_file": "Forli_2023b_labels.gpkg",
+        "sha256": "0c0b3d3560fc17fa",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 1991,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 84989,
+        "coverage_fraction": 0.9075,
+        "coverage_polygons": 4,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 3856,
+            "prevalence": 0.045370577368835964,
+            "valid_cells": 84989,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 3856,
+              "prevalence": 0.04117414656543977,
+              "source": "canonical_gpkg",
+              "features": 1991,
+              "point_buffer_m": 0.0,
+              "frozen_file": "Forli_2023b_labels.gpkg",
+              "sha256": "0c0b3d3560fc17fa",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 1991,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 84989,
+              "coverage_fraction": 0.9075,
+              "coverage_polygons": 4
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 8585,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 70,
+          "reddit_arcticshift": 78,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 7202,
+          "reddit_arcticshift": 72,
+          "google_news_rss": 70
+        },
+        "kept_total": 7344
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "IT"
+        ],
+        "places_inside": 260,
+        "self_features_excluded": 2,
+        "self_names": [
+          "emilia romagna",
+          "forli",
+          "montone",
+          "romagna",
+          "ronco"
+        ],
+        "gazetteer_names": 275,
+        "outside_towns": 429,
+        "outside_names": 429,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 275
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 429,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 265,
+        "distinct_locations": 24,
+        "effective_locations": 3.78,
+        "top_place": "Dovadola",
+        "top_share": 0.442,
+        "top5": [
+          [
+            "Dovadola",
+            0.442
+          ],
+          [
+            "Faenza",
+            0.238
+          ],
+          [
+            "Roncalceci",
+            0.094
+          ],
+          [
+            "Solarolo",
+            0.034
+          ],
+          [
+            "Durazzano",
+            0.034
+          ]
+        ],
+        "via": {
+          "gazetteer": 259,
+          "ner+nominatim": 6
+        }
+      },
+      "social": {
+        "documents_wide_window": 7344,
+        "gazetteer_names": 275,
+        "primary": {
+          "mentions": 239,
+          "mentions_in_grid": 239,
+          "cells_with_signal": 93225,
+          "by_source": {
+            "gdelt_bigquery": 227,
+            "reddit_arcticshift": 6,
+            "google_news_rss": 6
+          },
+          "by_resolution": {
+            "gazetteer": 233,
+            "ner+nominatim": 6
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 8585,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 70,
+            "detail": "19s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 78,
+            "detail": "10s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 239,
+        "distinct_locations": 23,
+        "effective_locations": 3.78,
+        "top_place": "Dovadola",
+        "top_share": 0.439,
+        "top5": [
+          [
+            "Dovadola",
+            0.439
+          ],
+          [
+            "Faenza",
+            0.238
+          ],
+          [
+            "Roncalceci",
+            0.105
+          ],
+          [
+            "Solarolo",
+            0.038
+          ],
+          [
+            "Durazzano",
+            0.029
+          ]
+        ],
+        "via": {
+          "gazetteer": 233,
+          "ner+nominatim": 6
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:15:06",
+      "acquired_utc": "2026-09-30T10:26:41",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery"
+      ],
+      "cells_analysed": 84967,
+      "cells_excluded": 8684,
+      "data_fingerprint": "3de0a0a21c3bc7a2",
+      "label_corr_range_m": 2000.0,
+      "cv_tile_m": 2000.0,
+      "cv_tile_rule": "correlogram range 2000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": 0.0016159244850060574,
+          "ci95": [
+            -0.0003622233287084757,
+            0.004064209810764644
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.011739555166810328,
+          "ci95": [
+            -0.0025114834552900523,
+            0.02736990866834785
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.005393125884531585,
+          "ci95": [
+            -0.0044734873445193704,
+            0.016182965594182367
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.0023962246296446717,
+          "ci95": [
+            -0.008698671785217837,
+            0.013696720448695137
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.007646711206878405,
+          "ci95": [
+            -0.009053428965395046,
+            0.026956188909655288
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.028235837929165508,
+          "ci95": [
+            -0.04182424195215196,
+            -0.013977329963764183
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": 0.0016159244850060574,
+          "ci95": [
+            -0.0003622233287084757,
+            0.004064209810764644
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.011739555166810328,
+          "ci95": [
+            -0.0025114834552900523,
+            0.02736990866834785
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.005393125884531585,
+          "ci95": [
+            -0.0044734873445193704,
+            0.016182965594182367
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.0023962246296446717,
+          "ci95": [
+            -0.008698671785217837,
+            0.013696720448695137
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.007646711206878405,
+          "ci95": [
+            -0.009053428965395046,
+            0.026956188909655288
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.028235837929165508,
+          "ci95": [
+            -0.04182424195215196,
+            -0.013977329963764183
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0402,
+        0.0911
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.1312490311030715,
+      "pipeline_version": "v6.0.0"
+    },
+    "York_2015": {
+      "city": "York_2015",
+      "event_date": "2015-12-27",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "5ca50aa46b",
+        "physical": "9fae66be28",
+        "labels": "d95413a2d2"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32630",
+        "res": 100.0,
+        "x0": 621200.0,
+        "y1": 5987600.0,
+        "nr": 114,
+        "nc": 102
+      },
+      "n_cells": 10821,
+      "physical_meta": {
+        "s1_event_scenes": 6
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "file_url:ea",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 514,
+        "prevalence": 0.0475002310322521,
+        "source": "canonical_gpkg",
+        "features": 1,
+        "point_buffer_m": 0.0,
+        "frozen_file": "York_2015_labels.gpkg",
+        "sha256": "5d6ae2ba25167106",
+        "frozen_source": "file_url:ea",
+        "features_in_bbox": 1,
+        "gt_tier": "A_authoritative",
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 514,
+            "prevalence": 0.0475002310322521,
+            "valid_cells": 10821,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 514,
+              "prevalence": 0.0475002310322521,
+              "source": "canonical_gpkg",
+              "features": 1,
+              "point_buffer_m": 0.0,
+              "frozen_file": "York_2015_labels.gpkg",
+              "sha256": "5d6ae2ba25167106",
+              "frozen_source": "file_url:ea",
+              "features_in_bbox": 1,
+              "gt_tier": "A_authoritative",
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 8207,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 69,
+          "reddit_arcticshift": 558,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 4236,
+          "reddit_arcticshift": 553,
+          "google_news_rss": 68
+        },
+        "kept_total": 4857
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "GB"
+        ],
+        "places_inside": 28,
+        "self_features_excluded": 1,
+        "self_names": [
+          "foss",
+          "north yorkshire",
+          "ouse",
+          "storm eva",
+          "york"
+        ],
+        "gazetteer_names": 28,
+        "outside_towns": 361,
+        "outside_names": 358,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 28
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 358,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 5,
+        "distinct_locations": 2,
+        "effective_locations": 1.92,
+        "top_place": "New Earswick",
+        "top_share": 0.6,
+        "top5": [
+          [
+            "New Earswick",
+            0.6
+          ],
+          [
+            "Earswick",
+            0.4
+          ]
+        ],
+        "via": {
+          "gazetteer": 5
+        }
+      },
+      "social": {
+        "documents_wide_window": 4857,
+        "gazetteer_names": 28,
+        "primary": {
+          "mentions": 5,
+          "mentions_in_grid": 5,
+          "cells_with_signal": 10466,
+          "by_source": {
+            "gdelt_bigquery": 5
+          },
+          "by_resolution": {
+            "gazetteer": 5
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 8207,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 69,
+            "detail": "12s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 558,
+            "detail": "33s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 5,
+        "distinct_locations": 2,
+        "effective_locations": 1.92,
+        "top_place": "New Earswick",
+        "top_share": 0.6,
+        "top5": [
+          [
+            "New Earswick",
+            0.6
+          ],
+          [
+            "Earswick",
+            0.4
+          ]
+        ],
+        "via": {
+          "gazetteer": 5
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:18:34",
+      "acquired_utc": "2026-09-30T10:27:12",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative"
+      ],
+      "cells_analysed": 10820,
+      "cells_excluded": 1,
+      "data_fingerprint": "bb3614a17ce93700",
+      "label_corr_range_m": 1500.0,
+      "cv_tile_m": 2000.0,
+      "cv_tile_rule": "correlogram range 1500 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": 0.03037759179222861,
+          "ci95": [
+            0.00121070879886256,
+            0.04975041786131872
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.1186798376639885,
+          "ci95": [
+            0.00555364674127582,
+            0.2352344823025872
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.059467936068071756,
+          "ci95": [
+            -0.012525171189020905,
+            0.0924537779438763
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.022566062088780557,
+          "ci95": [
+            0.009166102913229073,
+            0.029577416793617972
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.004299974614366556,
+          "ci95": [
+            -0.06952298431335922,
+            0.032398801373428786
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.136148579692852,
+          "ci95": [
+            -0.19918809366057846,
+            -0.014925830965656507
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": 0.03037759179222861,
+          "ci95": [
+            0.00121070879886256,
+            0.04975041786131872
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.1186798376639885,
+          "ci95": [
+            0.00555364674127582,
+            0.2352344823025872
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.059467936068071756,
+          "ci95": [
+            -0.012525171189020905,
+            0.0924537779438763
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.022566062088780557,
+          "ci95": [
+            0.009166102913229073,
+            0.029577416793617972
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.004299974614366556,
+          "ci95": [
+            -0.06952298431335922,
+            0.032398801373428786
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.136148579692852,
+          "ci95": [
+            -0.19918809366057846,
+            -0.014925830965656507
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0153,
+        0.2725
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2015",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.09689679320196264,
+      "pipeline_version": "v6.0.0"
+    },
+    "Carlisle_2015": {
+      "city": "Carlisle_2015",
+      "event_date": "2015-12-05",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "4bc1f26076",
+        "physical": "40c7476a5d",
+        "labels": "e20d76e6f3"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32630",
+        "res": 100.0,
+        "x0": 498000.0,
+        "y1": 6090400.0,
+        "nr": 123,
+        "nc": 117
+      },
+      "n_cells": 14037,
+      "physical_meta": {
+        "s1_event_scenes": 5
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "file_url:ea",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 1234,
+        "prevalence": 0.08791052219135143,
+        "source": "canonical_gpkg",
+        "features": 1,
+        "point_buffer_m": 0.0,
+        "frozen_file": "Carlisle_2015_labels.gpkg",
+        "sha256": "dbde57f517a24330",
+        "frozen_source": "file_url:ea",
+        "features_in_bbox": 1,
+        "gt_tier": "A_authoritative",
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 1234,
+            "prevalence": 0.08791052219135143,
+            "valid_cells": 14037,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 1234,
+              "prevalence": 0.08791052219135143,
+              "source": "canonical_gpkg",
+              "features": 1,
+              "point_buffer_m": 0.0,
+              "frozen_file": "Carlisle_2015_labels.gpkg",
+              "sha256": "dbde57f517a24330",
+              "frozen_source": "file_url:ea",
+              "features_in_bbox": 1,
+              "gt_tier": "A_authoritative",
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 3325,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 94,
+          "reddit_arcticshift": 174,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 2120,
+          "reddit_arcticshift": 172,
+          "google_news_rss": 93
+        },
+        "kept_total": 2385
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "GB"
+        ],
+        "places_inside": 58,
+        "self_features_excluded": 1,
+        "self_names": [
+          "carlisle",
+          "cumbria",
+          "eden",
+          "storm desmond"
+        ],
+        "gazetteer_names": 60,
+        "outside_towns": 74,
+        "outside_names": 74,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 60
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 74,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 4,
+        "distinct_locations": 1,
+        "effective_locations": 1.0,
+        "top_place": "Harraby",
+        "top_share": 1.0,
+        "top5": [
+          [
+            "Harraby",
+            1.0
+          ]
+        ],
+        "via": {
+          "gazetteer": 4
+        }
+      },
+      "social": {
+        "documents_wide_window": 2385,
+        "gazetteer_names": 60,
+        "primary": {
+          "mentions": 2,
+          "mentions_in_grid": 2,
+          "cells_with_signal": 12204,
+          "by_source": {
+            "gdelt_bigquery": 2
+          },
+          "by_resolution": {
+            "gazetteer": 2
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 3325,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 94,
+            "detail": "13s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 174,
+            "detail": "27s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 2,
+        "distinct_locations": 1,
+        "effective_locations": 1.0,
+        "top_place": "Harraby",
+        "top_share": 1.0,
+        "top5": [
+          [
+            "Harraby",
+            1.0
+          ]
+        ],
+        "via": {
+          "gazetteer": 2
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:21:52",
+      "acquired_utc": "2026-09-30T10:27:05",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative"
+      ],
+      "cells_analysed": 14029,
+      "cells_excluded": 8,
+      "data_fingerprint": "e8247b8cae1efad2",
+      "label_corr_range_m": 4000.0,
+      "cv_tile_m": 2000.0,
+      "cv_tile_rule": "correlogram range 4000 m; fewer than 15 flooded tiles even at larger sizes: default tile",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": 0.1899651027135294,
+          "ci95": [
+            0.06632249295387822,
+            0.3014501525877203
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.3509100292886887,
+          "ci95": [
+            0.09951102139315864,
+            0.7525993483031868
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.049853710198076814,
+          "ci95": [
+            -0.03690413921877591,
+            0.06793958175316266
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.02671025284059895,
+          "ci95": [
+            0.017437220919510762,
+            0.04654428911748917
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.0024045972559407504,
+          "ci95": [
+            -0.01119426840509201,
+            0.05981283292798969
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "verdict": "saturated"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": 0.1899651027135294,
+          "ci95": [
+            0.06632249295387822,
+            0.3014501525877203
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.3509100292886887,
+          "ci95": [
+            0.09951102139315864,
+            0.7525993483031868
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.049853710198076814,
+          "ci95": [
+            -0.03690413921877591,
+            0.06793958175316266
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.02671025284059895,
+          "ci95": [
+            0.017437220919510762,
+            0.04654428911748917
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.0024045972559407504,
+          "ci95": [
+            -0.01119426840509201,
+            0.05981283292798969
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "verdict": "saturated"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0197,
+        0.69
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2015",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.8529453439981387,
+      "pipeline_version": "v6.0.0"
+    },
+    "PortoAlegre_2024": {
+      "city": "PortoAlegre_2024",
+      "event_date": "2024-05-05",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "c36a05bc17",
+        "physical": "c8b2db03fd",
+        "labels": "11ae2d392e"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32722",
+        "res": 100.0,
+        "x0": 469800.0,
+        "y1": 6704400.0,
+        "nr": 541,
+        "nc": 264
+      },
+      "n_cells": 141828,
+      "physical_meta": {
+        "s1_event_scenes": 3
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "arcgis_featureserver",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 32156,
+        "prevalence": 0.22672532927207603,
+        "source": "canonical_gpkg",
+        "features": 13011,
+        "point_buffer_m": 0.0,
+        "frozen_file": "PortoAlegre_2024_labels.gpkg",
+        "sha256": "32abfbc8879ab2f4",
+        "frozen_source": "arcgis_featureserver",
+        "features_in_bbox": 13011,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 91562,
+        "coverage_fraction": 0.6456,
+        "coverage_polygons": 4,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 32153,
+            "prevalence": 0.3511609619711234,
+            "valid_cells": 91562,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 32156,
+              "prevalence": 0.22672532927207603,
+              "source": "canonical_gpkg",
+              "features": 13011,
+              "point_buffer_m": 0.0,
+              "frozen_file": "PortoAlegre_2024_labels.gpkg",
+              "sha256": "32abfbc8879ab2f4",
+              "frozen_source": "arcgis_featureserver",
+              "features_in_bbox": 13011,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 91562,
+              "coverage_fraction": 0.6456,
+              "coverage_polygons": 4
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 1460,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 377,
+          "reddit_arcticshift": 487,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 1254,
+          "reddit_arcticshift": 484,
+          "google_news_rss": 377
+        },
+        "kept_total": 2115
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "BR"
+        ],
+        "places_inside": 275,
+        "self_features_excluded": 0,
+        "self_names": [
+          "guaiba",
+          "porto alegre",
+          "rio grande do sul"
+        ],
+        "gazetteer_names": 383,
+        "outside_towns": 99,
+        "outside_names": 137,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 383
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 137,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 288,
+        "distinct_locations": 43,
+        "effective_locations": 10.28,
+        "top_place": "Sao Sebastiao",
+        "top_share": 0.212,
+        "top5": [
+          [
+            "Sao Sebastiao",
+            0.212
+          ],
+          [
+            "Belem Novo",
+            0.132
+          ],
+          [
+            "Sao Joao",
+            0.101
+          ],
+          [
+            "Sarandi",
+            0.083
+          ],
+          [
+            "Humaita",
+            0.083
+          ]
+        ],
+        "via": {
+          "ner+nominatim": 186,
+          "gazetteer": 102
+        }
+      },
+      "social": {
+        "documents_wide_window": 2115,
+        "gazetteer_names": 383,
+        "primary": {
+          "mentions": 219,
+          "mentions_in_grid": 219,
+          "cells_with_signal": 124110,
+          "by_source": {
+            "gdelt_bigquery": 209,
+            "reddit_arcticshift": 6,
+            "google_news_rss": 4
+          },
+          "by_resolution": {
+            "ner+nominatim": 145,
+            "gazetteer": 74
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 1460,
+            "detail": "1s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 377,
+            "detail": "20s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 487,
+            "detail": "55s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 219,
+        "distinct_locations": 34,
+        "effective_locations": 7.97,
+        "top_place": "Sao Sebastiao",
+        "top_share": 0.274,
+        "top5": [
+          [
+            "Sao Sebastiao",
+            0.274
+          ],
+          [
+            "Belem Novo",
+            0.119
+          ],
+          [
+            "Sarandi",
+            0.105
+          ],
+          [
+            "Sao Joao",
+            0.105
+          ],
+          [
+            "Nossa Senhora das Gracas",
+            0.068
+          ]
+        ],
+        "via": {
+          "ner+nominatim": 145,
+          "gazetteer": 74
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:25:12",
+      "acquired_utc": "2026-09-30T10:26:51",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery"
+      ],
+      "cells_analysed": 79961,
+      "cells_excluded": 61867,
+      "data_fingerprint": "b0759a94cc7fa40e",
+      "label_corr_range_m": NaN,
+      "cv_tile_m": 4000.0,
+      "cv_tile_rule": "autocorrelation never fell below 0.1 within the correlogram's range: maximum tile",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": -7.413507832692594e-05,
+          "ci95": [
+            -0.0005744410005263318,
+            0.00041302574126143393
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.0002927849361966816,
+          "ci95": [
+            -0.002352637539261628,
+            0.0016148204826137648
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -2.2271279948557802e-05,
+          "ci95": [
+            -0.0003376920797780323,
+            0.00025833440083207986
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_gated_fm": {
+          "estimate": 8.819247896066502e-05,
+          "ci95": [
+            8.819247896066502e-05,
+            8.819247896066502e-05
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.00021517220710890684,
+          "ci95": [
+            -0.0011319753890984556,
+            0.0015268372873068032
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.09599037657450327,
+          "ci95": [
+            -0.11031806519899497,
+            -0.07814188655117922
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": "R4_+forcing",
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": -7.413507832692594e-05,
+          "ci95": [
+            -0.0005744410005263318,
+            0.00041302574126143393
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.0002927849361966816,
+          "ci95": [
+            -0.002352637539261628,
+            0.0016148204826137648
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -2.2271279948557802e-05,
+          "ci95": [
+            -0.0003376920797780323,
+            0.00025833440083207986
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_gated_fm": {
+          "estimate": 8.819247896066502e-05,
+          "ci95": [
+            8.819247896066502e-05,
+            8.819247896066502e-05
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.00021517220710890684,
+          "ci95": [
+            -0.0011319753890984556,
+            0.0015268372873068032
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.09599037657450327,
+          "ci95": [
+            -0.11031806519899497,
+            -0.07814188655117922
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": "R2_+forcing",
+      "fold_prevalence_range": [
+        0.3643,
+        0.4572
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.6407715485500841,
+      "pipeline_version": "v6.0.0"
+    },
+    "TaquariValley_2024": {
+      "city": "TaquariValley_2024",
+      "event_date": "2024-05-02",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "b1147904ff",
+        "physical": "4270429ec5",
+        "labels": "c9df784651"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32722",
+        "res": 100.0,
+        "x0": 410300.0,
+        "y1": 6771300.0,
+        "nr": 150,
+        "nc": 95
+      },
+      "n_cells": 13823,
+      "physical_meta": {
+        "s1_event_scenes": 3
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 463,
+        "prevalence": 0.03349489980467337,
+        "source": "canonical_gpkg",
+        "features": 641,
+        "point_buffer_m": 0.0,
+        "frozen_file": "TaquariValley_2024_labels.gpkg",
+        "sha256": "d9d05f2794f7ec2d",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 641,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 5032,
+        "coverage_fraction": 0.364,
+        "coverage_polygons": 3,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 463,
+            "prevalence": 0.09201112877583466,
+            "valid_cells": 5032,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 463,
+              "prevalence": 0.03349489980467337,
+              "source": "canonical_gpkg",
+              "features": 641,
+              "point_buffer_m": 0.0,
+              "frozen_file": "TaquariValley_2024_labels.gpkg",
+              "sha256": "d9d05f2794f7ec2d",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 641,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 5032,
+              "coverage_fraction": 0.364,
+              "coverage_polygons": 3
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 350,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 85,
+          "reddit_arcticshift": 289,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "reddit_arcticshift": 287,
+          "gdelt_bigquery": 197,
+          "google_news_rss": 85
+        },
+        "kept_total": 569
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "BR"
+        ],
+        "places_inside": 6,
+        "self_features_excluded": 0,
+        "self_names": [
+          "rio grande do sul",
+          "rio taquari",
+          "taquari",
+          "vale do taquari"
+        ],
+        "gazetteer_names": 12,
+        "outside_towns": 129,
+        "outside_names": 176,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 12
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 176,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 63,
+        "distinct_locations": 8,
+        "effective_locations": 2.18,
+        "top_place": "Encantado",
+        "top_share": 0.651,
+        "top5": [
+          [
+            "Encantado",
+            0.651
+          ],
+          [
+            "Roca Sales",
+            0.159
+          ],
+          [
+            "Roca Sales",
+            0.079
+          ],
+          [
+            "Sao Jose",
+            0.032
+          ],
+          [
+            "Tres Pinheiros",
+            0.032
+          ]
+        ],
+        "via": {
+          "gazetteer": 51,
+          "ner+nominatim": 12
+        }
+      },
+      "social": {
+        "documents_wide_window": 569,
+        "gazetteer_names": 12,
+        "primary": {
+          "mentions": 60,
+          "mentions_in_grid": 55,
+          "cells_with_signal": 13823,
+          "by_source": {
+            "gdelt_bigquery": 46,
+            "google_news_rss": 10,
+            "reddit_arcticshift": 4
+          },
+          "by_resolution": {
+            "gazetteer": 49,
+            "ner+nominatim": 11
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 350,
+            "detail": "0s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 85,
+            "detail": "19s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 289,
+            "detail": "58s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "ok",
+            "n": 0,
+            "detail": "10s"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 60,
+        "distinct_locations": 8,
+        "effective_locations": 2.11,
+        "top_place": "Encantado",
+        "top_share": 0.667,
+        "top5": [
+          [
+            "Encantado",
+            0.667
+          ],
+          [
+            "Roca Sales",
+            0.15
+          ],
+          [
+            "Roca Sales",
+            0.067
+          ],
+          [
+            "Tres Pinheiros",
+            0.033
+          ],
+          [
+            "Sao Jose",
+            0.033
+          ]
+        ],
+        "via": {
+          "gazetteer": 49,
+          "ner+nominatim": 11
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:28:39",
+      "acquired_utc": "2026-09-30T10:26:58",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_google_news_rss"
+      ],
+      "cells_analysed": 4832,
+      "cells_excluded": 8991,
+      "data_fingerprint": "19ba8bded9bbd96e",
+      "label_corr_range_m": 1000.0,
+      "cv_tile_m": 2000.0,
+      "cv_tile_rule": "correlogram range 1000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": -0.015433155311161304,
+          "ci95": [
+            -0.03591594961443188,
+            0.00325894841056433
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.06809742487296233,
+          "ci95": [
+            -0.14472781190217424,
+            0.016090127209694747
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.025584173707663138,
+          "ci95": [
+            -0.05235330798258286,
+            0.02593298474466638
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.03286822861413796,
+          "ci95": [
+            -0.03614909256350079,
+            0.021244367899338368
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.02314346603994161,
+          "ci95": [
+            -0.010269371747118151,
+            0.046200398198608765
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.02039104342450293,
+          "ci95": [
+            -0.038150435565776554,
+            -0.004055756823314966
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": -0.015433155311161304,
+          "ci95": [
+            -0.03591594961443188,
+            0.00325894841056433
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.06809742487296233,
+          "ci95": [
+            -0.14472781190217424,
+            0.016090127209694747
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.025584173707663138,
+          "ci95": [
+            -0.05235330798258286,
+            0.02593298474466638
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.03286822861413796,
+          "ci95": [
+            -0.03614909256350079,
+            0.021244367899338368
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.02314346603994161,
+          "ci95": [
+            -0.010269371747118151,
+            0.046200398198608765
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.02039104342450293,
+          "ci95": [
+            -0.038150435565776554,
+            -0.004055756823314966
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0601,
+        0.115
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.9193121746962857,
+      "pipeline_version": "v6.0.0"
+    },
+    "Houston_SanJacinto_2017": {
+      "city": "Houston_SanJacinto_2017",
+      "event_date": "2017-08-29",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "05112b5552",
+        "physical": "91f8e4a939",
+        "labels": "276e2926a7"
+      },
+      "grid_m": 150,
+      "grid": {
+        "crs": "EPSG:32615",
+        "res": 150.0,
+        "x0": 238200.0,
+        "y1": 3372900.0,
+        "nr": 442,
+        "nc": 436
+      },
+      "n_cells": 184495,
+      "physical_meta": {
+        "s1_event_scenes": 4
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "A_authoritative",
+      "effective_label_source": "usgs_sciencebase",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 27568,
+        "prevalence": 0.14942410363424483,
+        "source": "canonical_gpkg",
+        "features": 1,
+        "point_buffer_m": 0.0,
+        "frozen_file": "Houston_SanJacinto_2017_labels.gpkg",
+        "sha256": "d202af054a80e6d7",
+        "frozen_source": "usgs_sciencebase",
+        "features_in_bbox": 1,
+        "gt_tier": "A_authoritative",
+        "valid_cells": 89388,
+        "coverage_fraction": 0.4845,
+        "coverage_polygons": 1,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "A_authoritative",
+            "positives": 27565,
+            "prevalence": 0.30837472591399295,
+            "valid_cells": 89388,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 27568,
+              "prevalence": 0.14942410363424483,
+              "source": "canonical_gpkg",
+              "features": 1,
+              "point_buffer_m": 0.0,
+              "frozen_file": "Houston_SanJacinto_2017_labels.gpkg",
+              "sha256": "d202af054a80e6d7",
+              "frozen_source": "usgs_sciencebase",
+              "features_in_bbox": 1,
+              "gt_tier": "A_authoritative",
+              "valid_cells": 89388,
+              "coverage_fraction": 0.4845,
+              "coverage_polygons": 1
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 78156,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 35,
+          "reddit_arcticshift": 2995,
+          "petabencana": 0,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 39540,
+          "reddit_arcticshift": 2985,
+          "google_news_rss": 35
+        },
+        "kept_total": 42560
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "US"
+        ],
+        "places_inside": 339,
+        "self_features_excluded": 1,
+        "self_names": [
+          "harris county",
+          "harvey",
+          "houston",
+          "lake houston",
+          "san jacinto"
+        ],
+        "gazetteer_names": 475,
+        "outside_towns": 104,
+        "outside_names": 104,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 475
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 104,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 995,
+        "distinct_locations": 58,
+        "effective_locations": 6.29,
+        "top_place": "Kingwood",
+        "top_share": 0.268,
+        "top5": [
+          [
+            "Kingwood",
+            0.268
+          ],
+          [
+            "Jersey Village",
+            0.265
+          ],
+          [
+            "Tomball",
+            0.097
+          ],
+          [
+            "Conroe",
+            0.034
+          ],
+          [
+            "North Houston",
+            0.033
+          ]
+        ],
+        "via": {
+          "gazetteer": 990,
+          "ner+nominatim": 5
+        }
+      },
+      "social": {
+        "documents_wide_window": 42560,
+        "gazetteer_names": 475,
+        "primary": {
+          "mentions": 437,
+          "mentions_in_grid": 437,
+          "cells_with_signal": 137509,
+          "by_source": {
+            "gdelt_bigquery": 405,
+            "reddit_arcticshift": 22,
+            "google_news_rss": 10
+          },
+          "by_resolution": {
+            "gazetteer": 437
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 78156,
+            "detail": "11s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 35,
+            "detail": "11s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 2995,
+            "detail": "242s"
+          },
+          {
+            "source": "petabencana",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "not an Indonesian city"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)"
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 437,
+        "distinct_locations": 35,
+        "effective_locations": 4.82,
+        "top_place": "Kingwood",
+        "top_share": 0.414,
+        "top5": [
+          [
+            "Kingwood",
+            0.414
+          ],
+          [
+            "Tomball",
+            0.149
+          ],
+          [
+            "Conroe",
+            0.066
+          ],
+          [
+            "North Houston",
+            0.053
+          ],
+          [
+            "New Caney",
+            0.041
+          ]
+        ],
+        "via": {
+          "gazetteer": 437
+        },
+        "eligible": false,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:31:57",
+      "acquired_utc": "2026-09-30T16:18:08",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_reddit_arcticshift",
+        "S_src_google_news_rss"
+      ],
+      "cells_analysed": 87395,
+      "cells_excluded": 97100,
+      "data_fingerprint": "5c40844f313ed2aa",
+      "label_corr_range_m": 4000.0,
+      "cv_tile_m": 3500.0,
+      "cv_tile_rule": "correlogram range 4000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": 0.0016823473417682498,
+          "ci95": [
+            0.0003904965561454099,
+            0.0030028577458161934
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.004869672411954623,
+          "ci95": [
+            0.0011228360718911886,
+            0.008627259782321543
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.003207934660787884,
+          "ci95": [
+            0.0010580333743785283,
+            0.0060208029857581604
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.0015205599088841857,
+          "ci95": [
+            0.0005498961872895132,
+            0.0025511560348683176
+          ],
+          "verdict": "informative"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.005206548072101467,
+          "ci95": [
+            -0.00023098975001926362,
+            0.011104837102529323
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.11518820389321205,
+          "ci95": [
+            -0.13761728026270306,
+            -0.09352889473395495
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_A_terrain_first": "R0_none",
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": 0.0016823473417682498,
+          "ci95": [
+            0.0003904965561454099,
+            0.0030028577458161934
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": 0.004869672411954623,
+          "ci95": [
+            0.0011228360718911886,
+            0.008627259782321543
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_stacked_fm": {
+          "estimate": 0.003207934660787884,
+          "ci95": [
+            0.0010580333743785283,
+            0.0060208029857581604
+          ],
+          "verdict": "saturated"
+        },
+        "dAP_gated_fm": {
+          "estimate": 0.0015205599088841857,
+          "ci95": [
+            0.0005498961872895132,
+            0.0025511560348683176
+          ],
+          "verdict": "informative"
+        },
+        "dAP_early_fm": {
+          "estimate": 0.005206548072101467,
+          "ci95": [
+            -0.00023098975001926362,
+            0.011104837102529323
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.11518820389321205,
+          "ci95": [
+            -0.13761728026270306,
+            -0.09352889473395495
+          ],
+          "verdict": "harmful"
+        }
+      },
+      "saturation_rung_B_surface_first": "R0_none",
+      "fold_prevalence_range": [
+        0.1758,
+        0.358
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2015",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.31288532481063586,
+      "pipeline_version": "v6.0.0"
+    },
+    "Jakarta_2020": {
+      "city": "Jakarta_2020",
+      "event_date": "2020-01-01",
+      "profile": "full",
+      "stage_keys": {
+        "grid": "b7e5eaea45",
+        "physical": "2f6db2ccbf",
+        "labels": "65db969f14"
+      },
+      "grid_m": 100,
+      "grid": {
+        "crs": "EPSG:32748",
+        "res": 100.0,
+        "x0": 685800.0,
+        "y1": 9327700.0,
+        "nr": 323,
+        "nc": 356
+      },
+      "n_cells": 71661,
+      "physical_meta": {
+        "s1_event_scenes": 3
+      },
+      "physical_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db"
+      ],
+      "gt_tier": "B_crowdsourced",
+      "effective_label_source": "petabencana_area",
+      "label_source": "canonical_gpkg",
+      "label_info": {
+        "points_inside_grid": 0,
+        "positive_cells": 1054,
+        "prevalence": 0.014708139713372686,
+        "source": "canonical_gpkg",
+        "features": 255,
+        "point_buffer_m": 150.0,
+        "frozen_file": "Jakarta_2020_labels.gpkg",
+        "sha256": "8fb4ee55dbace692",
+        "frozen_source": "petabencana_area",
+        "features_in_bbox": 255,
+        "gt_tier": "B_crowdsourced",
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
+        "attempts": [
+          {
+            "source": "canonical_gpkg",
+            "gt_tier": "B_crowdsourced",
+            "positives": 1054,
+            "prevalence": 0.014708139713372686,
+            "valid_cells": 71661,
+            "accepted": true,
+            "details": {
+              "points_inside_grid": 0,
+              "positive_cells": 1054,
+              "prevalence": 0.014708139713372686,
+              "source": "canonical_gpkg",
+              "features": 255,
+              "point_buffer_m": 150.0,
+              "frozen_file": "Jakarta_2020_labels.gpkg",
+              "sha256": "8fb4ee55dbace692",
+              "frozen_source": "petabencana_area",
+              "features_in_bbox": 255,
+              "gt_tier": "B_crowdsourced",
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
+            }
+          }
+        ]
+      },
+      "documents": {
+        "fetched_by_source": {
+          "gdelt_bigquery": 12341,
+          "gdelt_rawfiles": 0,
+          "google_news_rss": 306,
+          "reddit_arcticshift": 828,
+          "wikimedia_commons": 0
+        },
+        "kept_by_source": {
+          "gdelt_bigquery": 11030,
+          "reddit_arcticshift": 822,
+          "google_news_rss": 306
+        },
+        "kept_total": 12158
+      },
+      "gazetteer": {
+        "source": "geonames",
+        "version": "geonames2",
+        "countries": [
+          "ID"
+        ],
+        "places_inside": 1005,
+        "self_features_excluded": 0,
+        "self_names": [
+          "dki jakarta",
+          "jabodetabek",
+          "jakarta"
+        ],
+        "gazetteer_names": 1652,
+        "outside_towns": 44,
+        "outside_names": 44,
+        "licence": "GeoNames, CC BY 4.0",
+        "names": 1652
+      },
+      "outside_places": {
+        "available": true,
+        "n_names": 44,
+        "source": "geonames"
+      },
+      "mention_concentration": {
+        "n_mentions": 5004,
+        "distinct_locations": 220,
+        "effective_locations": 35.42,
+        "top_place": "Manggarai",
+        "top_share": 0.086,
+        "top5": [
+          [
+            "Manggarai",
+            0.086
+          ],
+          [
+            "Kemang",
+            0.081
+          ],
+          [
+            "Kalideres",
+            0.043
+          ],
+          [
+            "Kebanjiran",
+            0.038
+          ],
+          [
+            "Jatiasih",
+            0.038
+          ]
+        ],
+        "via": {
+          "gazetteer": 3639,
+          "ner+nominatim": 1365
+        }
+      },
+      "social": {
+        "documents_wide_window": 12158,
+        "gazetteer_names": 1652,
+        "primary": {
+          "mentions": 4482,
+          "mentions_in_grid": 4482,
+          "cells_with_signal": 71661,
+          "by_source": {
+            "gdelt_bigquery": 4420,
+            "reddit_arcticshift": 32,
+            "google_news_rss": 30
+          },
+          "by_resolution": {
+            "gazetteer": 3288,
+            "ner+nominatim": 1194
+          }
+        },
+        "sources": [
+          {
+            "source": "gdelt_bigquery",
+            "status": "ok",
+            "n": 12341,
+            "detail": "8s"
+          },
+          {
+            "source": "gdelt_rawfiles",
+            "status": "skip",
+            "n": 0,
+            "detail": "GDELT already obtained via BigQuery"
+          },
+          {
+            "source": "google_news_rss",
+            "status": "ok",
+            "n": 306,
+            "detail": "17s"
+          },
+          {
+            "source": "reddit_arcticshift",
+            "status": "ok",
+            "n": 828,
+            "detail": "23s"
+          },
+          {
+            "source": "wikimedia_commons",
+            "status": "unavailable",
+            "n": 0,
+            "detail": "Commons geosearch error: Search is currently too busy. Please try again later."
+          }
+        ]
+      },
+      "localisation": {
+        "n_mentions": 4482,
+        "distinct_locations": 213,
+        "effective_locations": 34.6,
+        "top_place": "Kemang",
+        "top_share": 0.086,
+        "top5": [
+          [
+            "Kemang",
+            0.086
+          ],
+          [
+            "Manggarai",
+            0.086
+          ],
+          [
+            "Kalideres",
+            0.044
+          ],
+          [
+            "Kebanjiran",
+            0.039
+          ],
+          [
+            "Cipinang",
+            0.037
+          ]
+        ],
+        "via": {
+          "gazetteer": 3288,
+          "ner+nominatim": 1194
+        },
+        "eligible": true,
+        "rule": {
+          "min_mentions": 100,
+          "min_effective_locations": 10,
+          "max_top_place_share": 0.4,
+          "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+          "role": "defines the conditional secondary set and the forest-plot marking only"
+        }
+      },
+      "analysed_utc": "2026-10-02T06:35:26",
+      "acquired_utc": "2026-09-30T16:18:13",
+      "sanitised_columns": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km",
+        "built_frac",
+        "tree_frac",
+        "dw_built",
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ",
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h",
+        "s1_vv_drop_db",
+        "S_mentions",
+        "S_negative",
+        "S_distress",
+        "S_src_gdelt_bigquery",
+        "S_src_reddit_arcticshift",
+        "S_src_google_news_rss"
+      ],
+      "cells_analysed": 63941,
+      "cells_excluded": 7720,
+      "data_fingerprint": "2f3d3dcc620bd229",
+      "label_corr_range_m": 1000.0,
+      "cv_tile_m": 2000.0,
+      "cv_tile_rule": "correlogram range 1000 m",
+      "top_rung_A_terrain_first": {
+        "info_nats_fm": {
+          "estimate": -0.001251116161049009,
+          "ci95": [
+            -0.0031504572766115906,
+            0.0006607027443726588
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.009488531132418617,
+          "ci95": [
+            -0.02654880842799781,
+            0.004629829741415328
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.023314152579861518,
+          "ci95": [
+            -0.029085378466379177,
+            -0.011855071365152218
+          ],
+          "verdict": "harmful"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.004505127231755642,
+          "ci95": [
+            -0.012983587639376702,
+            0.002491538432229789
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.007117460552471494,
+          "ci95": [
+            -0.0238336363345997,
+            0.012302417681936753
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.001329986985029355,
+          "ci95": [
+            -0.003419426918287817,
+            0.001064155600975902
+          ],
+          "verdict": "saturated"
+        }
+      },
+      "saturation_rung_A_terrain_first": null,
+      "top_rung_B_surface_first": {
+        "info_nats_fm": {
+          "estimate": -0.001251116161049009,
+          "ci95": [
+            -0.0031504572766115906,
+            0.0006607027443726588
+          ],
+          "verdict": "inconclusive"
+        },
+        "info_frac_fm": {
+          "estimate": -0.009488531132418617,
+          "ci95": [
+            -0.02654880842799781,
+            0.004629829741415328
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_stacked_fm": {
+          "estimate": -0.023314152579861518,
+          "ci95": [
+            -0.029085378466379177,
+            -0.011855071365152218
+          ],
+          "verdict": "harmful"
+        },
+        "dAP_gated_fm": {
+          "estimate": -0.004505127231755642,
+          "ci95": [
+            -0.012983587639376702,
+            0.002491538432229789
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_early_fm": {
+          "estimate": -0.007117460552471494,
+          "ci95": [
+            -0.0238336363345997,
+            0.012302417681936753
+          ],
+          "verdict": "inconclusive"
+        },
+        "dAP_adr_legacy_fm": {
+          "estimate": -0.001329986985029355,
+          "ci95": [
+            -0.003419426918287817,
+            0.001064155600975902
+          ],
+          "verdict": "saturated"
+        }
+      },
+      "saturation_rung_B_surface_first": null,
+      "fold_prevalence_range": [
+        0.0085,
+        0.046
+      ],
+      "population": {
+        "source": "ghsl",
+        "asset": "JRC/GHSL/P2023A/GHS_POP/2020",
+        "native_m": 100
+      },
+      "social_population_spearman": 0.7501802510274975,
+      "pipeline_version": "v6.0.0"
+    }
+  },
+  "finished_utc": "2026-10-02T09:32:35.960602"
+}

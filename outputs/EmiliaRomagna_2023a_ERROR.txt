@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/content/saturation_code_v6_1/orchestrator.py", line 1658, in run_all
+    ctx = acquire_city(city, registry[city], prereg, profile, clients, out_root, cache_root, log)
+  File "/content/saturation_code_v6_1/orchestrator.py", line 386, in acquire_city
+    phys, pmeta = st.get(f"physical_{k_phys}", lambda: ds.physical_layers(city, cfg, G, df, prereg, log))
+                  ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6_1/orchestrator.py", line 193, in get
+    val = pickle.load(fh)
+  File "internals.pyx", line 629, in pandas._libs.internals._unpickle_block
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/internals/blocks.py", line 2645, in maybe_coerce_values
+    def maybe_coerce_values(values: ArrayLike) -> ArrayLike:
+    
+KeyboardInterrupt

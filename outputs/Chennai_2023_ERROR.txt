@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/content/saturation_code_v6/orchestrator.py", line 1356, in run_all
+    ctx = acquire_city(city, registry[city], prereg, profile, clients, out_root, cache_root, log)
+  File "/content/saturation_code_v6/orchestrator.py", line 333, in acquire_city
+    y, y_sens, label_source, linfo = st.get(f"labels_{k_lab}",
+                                     ~~~~~~^^^^^^^^^^^^^^^^^^^
+                                            lambda: ds.label_chain(city, cfg, G, df, prereg, cache_root, log, out_dir=out))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6/orchestrator.py", line 159, in get
+    val = fn()
+  File "/content/saturation_code_v6/orchestrator.py", line 334, in <lambda>
+    lambda: ds.label_chain(city, cfg, G, df, prereg, cache_root, log, out_dir=out))
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6/data_sources.py", line 1997, in label_chain
+    raise RuntimeError(f"no label source passed ({brief}). Details in label_attempts.json")
+RuntimeError: no label source passed (ai4g_sar: AI4G: 0 detections in 2023-12-02..2023-12-14, none after the dataset-card filters; s2_change: only 18% of cells observed cloud-free after the event (< 50%); s1_change: no usable Sentinel-1 event/baseline pair (event scenes=0); nearest acquisitions: ['2023-10-25', '2023-11-06', '2023-11-18', '2023-11-30', '2024-01-17']). Details in label_attempts.json

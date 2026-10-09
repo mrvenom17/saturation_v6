@@ -1,0 +1,328 @@
+{
+  "prereg": {
+    "version": "v6.0-2026-09",
+    "grid_m": 100,
+    "max_cells": 260000,
+    "grid_m_escalation": [
+      100,
+      150,
+      200,
+      250
+    ],
+    "grid_rule": "the smallest listed cell size whose bounding box fits max_cells is used; because the box is an upper bound on cells inside the study area, the cap can never be breached after the choice",
+    "label": {
+      "point_rule": "containing cell",
+      "polygon_rule": "cell centre within polygon",
+      "sensitivity_point_buffer_m": 100,
+      "event_window_days": [
+        -2,
+        10
+      ],
+      "sources": [
+        "copernicus_ems (EMS Rapid Mapping delineation polygons)",
+        "usgs_sciencebase (USGS data release: inundation polygons or high-water marks)",
+        "portal_download (open-data portal file, filtered to the event window)",
+        "petabencana_area (RW-level flooded areas, else buffered reports)",
+        "official (municipal file)",
+        "gfd (Global Flood Database, events <= 2018)",
+        "s1_change (Sentinel-1)",
+        "s2_change (Sentinel-2 MNDWI)"
+      ],
+      "prevalence_bounds": [
+        0.0005,
+        0.6
+      ],
+      "min_positive_cells": 50,
+      "flag_prevalence_above": 0.35,
+      "valid_cell_fraction": 0.5,
+      "exclude_permanent_water_occ": 50,
+      "observable_rule": "EMS: inside the activation AOI; S1/S2: observed in both periods; USGS: inside the product footprint",
+      "ems_layer_regex": "observed_event|flooded_area|flood_extent|inundat (hydrography/facilities/settlements dropped)",
+      "ems_max_packages": 12,
+      "sciencebase_max_files": 8,
+      "report_buffer_m": 250,
+      "report_window_days": [
+        -1,
+        3
+      ],
+      "min_reports": 30,
+      "s1_change": {
+        "baseline_days": [
+          -40,
+          -10
+        ],
+        "event_days": [
+          -2,
+          12
+        ],
+        "diff_db": -3.0,
+        "event_db": -16.0,
+        "jrc_occurrence_max": 50,
+        "slope_max_deg": 5.0,
+        "hand_max_m": 15.0,
+        "cell_fraction": 0.25
+      },
+      "s2_change": {
+        "baseline_days": [
+          -90,
+          -15
+        ],
+        "event_days": [
+          1,
+          12
+        ],
+        "cloud_prob_max": 40,
+        "mndwi_threshold": 0.0,
+        "jrc_occurrence_max": 50,
+        "slope_max_deg": 5.0,
+        "hand_max_m": 15.0,
+        "cell_fraction": 0.25,
+        "min_clear_fraction": 0.5
+      }
+    },
+    "physical_groups": {
+      "terrain": [
+        "elev_m",
+        "slope_deg",
+        "tpi_1km"
+      ],
+      "surface": [
+        "built_frac",
+        "tree_frac",
+        "dw_built"
+      ],
+      "hydrography": [
+        "hand_m",
+        "log_upa",
+        "dist_water_m",
+        "jrc_occ"
+      ],
+      "forcing": [
+        "era5_rain_72h",
+        "era5_rain_ante7d",
+        "era5_sm_l1",
+        "imerg_rain_72h"
+      ],
+      "sar_event": [
+        "s1_vv_drop_db"
+      ]
+    },
+    "orderings": {
+      "A_terrain_first": [
+        "terrain",
+        "surface",
+        "hydrography",
+        "forcing",
+        "sar_event"
+      ],
+      "B_surface_first": [
+        "surface",
+        "forcing",
+        "terrain",
+        "hydrography",
+        "sar_event"
+      ]
+    },
+    "social": {
+      "sources": [
+        "gdelt_bigquery",
+        "gdelt_rawfiles",
+        "google_news_rss",
+        "reddit_arcticshift",
+        "youtube",
+        "petabencana",
+        "flickr",
+        "wikimedia_commons"
+      ],
+      "window_days": [
+        -1,
+        2
+      ],
+      "sensitivity_window_days": [
+        -3,
+        3
+      ],
+      "kde_bandwidth_m": 2500,
+      "sensitivity_bandwidth_m": 1000,
+      "transform": "log1p(mentions per km2)",
+      "primary_channel": "S_mentions",
+      "emotion_channels": [
+        "S_negative (GDELT tone or transformer negativity)",
+        "S_distress (lexicon)",
+        "S_src_* (per source)"
+      ],
+      "min_source_mentions": 10,
+      "max_bq_gb": 120,
+      "outside_places_buffer_km": 80,
+      "gdelt_text": "title (from 2019-09-22) + URL slug + GKG location names; earlier events have no titles",
+      "geoparsing": {
+        "version": "g3",
+        "added": "v6 (applied to every city)",
+        "gazetteer": "GeoNames country extract (download.geonames.org/export/dump/<CC>.zip, CC BY 4.0), feature class P codes PPL, PPLX, PPLL, PPLF, PPLS, PPLA2-5 inside the study area (name, ASCII name and Latin-script alternate names); generic words, major places, names used > 2 km apart and names shared with towns outside the area removed. v5.5.1: replaces the OSM/Overpass gazetteer, which was unavailable for 7 of 9 cities in v5.5.0. v6: the GeoNames feature that IS the study city/region (any of its names equal to a self-name) is excluded with all its alternate names",
+        "outside_places": "GeoNames populated places (population >= 1000, not sections) within outside_places_buffer_km of the study area but outside it",
+        "ner_geocoding": "Nominatim, bounded to the study box, up to 5 candidates; accepted only if a settlement unit (suburb ... town) whose name equals the NER name, accents ignored; streets, POIs, rivers and administrative areas never accepted; v6: the query is the name alone (bounded box), not name + alias",
+        "dropped": "month and weekday names; the study city's own names; major cities, regions, countries",
+        "diagnostic": "effective number of mention locations (1/HHI) and top-place share, logged and written to provenance",
+        "self_names": "names denoting the whole study area (city, region, storm, main river) are retrieval keywords only, never locations; v5 wrongly used the retrieval alias list here, which removed every within-area town listed as an alias from the social layer",
+        "toponym_rule": "t3: a gazetteer match counts only if the text holds an occurrence that is either a GDELT-structured location placed in the study area ('<name>, <home region/country>') or a capitalised, complete name in prose (no adjacent feature word or name particle, no adjacent capitalised word outside title-case headlines, no qualifier placing it elsewhere, not a common word of the city's language or English at Zipf >= 4.5); names that are countries, continents or first-level divisions of the study country never count; lower-case occurrences (URL words) do not count on their own",
+        "location_unit": "mentions are counted on a ~250 m lattice (0.0025 deg) for every resolution path"
+      },
+      "query_terms": "keyword APIs (news RSS, Reddit comments, YouTube) are queried with the event language's flood terms and English: es inundaci\u00f3n/DANA/riada, it alluvione/allagamento/esondazione, pt enchente/inunda\u00e7\u00e3o/alagamento, id banjir/genangan, en flood/flooding/waterlogging",
+      "geotagged_photos": {
+        "sources": "Flickr (flickr.photos.search, has_geo, API key) and Wikimedia Commons (geosearch, keyless)",
+        "rule": "photo TAKEN inside the social window, inside the study box, with flood vocabulary in its title, tags, description or categories; Flickr location accuracy >= 12 (neighbourhood or finer)",
+        "dedupe": "one photo per author, ~100 m spot and day",
+        "timeliness": "photos may be uploaded after the event; they measure where flooding was photographed, not what was known in real time (stated as a limitation; a sensitivity analysis drops them)"
+      },
+      "deduplication": "(1) syndicated wire copies: identical GDELT location list, tone vector and title count once; (2) identical text (160 normalised characters) counts once; (3) photos as above"
+    },
+    "cv": {
+      "k_folds": 5,
+      "tile_m": 2000,
+      "buffer_m": 500,
+      "inner_k": 3,
+      "seed": 42,
+      "tile_rule": "correlogram",
+      "tile_max_m": 4000,
+      "min_positive_tiles_per_fold": 3,
+      "tile_rule_text": "tile = correlogram range (autocorrelation < 0.1) minus the buffer, rounded up to 500 m, within [tile_m, tile_max_m]; stepped down by 500 m while fewer than 3 x k tiles contain flooded cells (Roberts et al. 2017)"
+    },
+    "model": {
+      "kind": "xgb",
+      "params": {
+        "n_estimators": 400,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 5,
+        "reg_lambda": 1.0
+      }
+    },
+    "computation": {
+      "checkpointing": "every stage and every ladder rung is written to cache/ as soon as it finishes; a disconnected run resumes instead of restarting",
+      "rung_reuse": "rungs with identical feature sets are computed once and reused across orderings",
+      "missing_data": "coarse reanalysis gaps are filled from the nearest valid cell, never a city median",
+      "per_city_grid": "grid_m may be raised for a study area too large at 100 m; reported per city"
+    },
+    "inference": {
+      "n_null_toroidal": 99,
+      "n_null_toroidal_early": 25,
+      "null_min_shift_m": 5000,
+      "n_boot_tiles": 500,
+      "alpha": 0.05,
+      "note": "early fusion gets its own (smaller) toroidal null because each shift needs XGBoost refits",
+      "gated_grid": {
+        "alphas": [
+          0.0,
+          0.25,
+          0.5,
+          1.0,
+          2.0
+        ],
+        "taus": [
+          0.3,
+          0.5,
+          0.7
+        ],
+        "rule": "(alpha, tau) chosen on training tiles by AP; alpha = 0 always admissible"
+      }
+    },
+    "robustness": {
+      "added": "v5.4.1, after the Chennai_2015 and Valencia_2024 runs; reported as robustness, never as primary",
+      "gradient_excluding_R0": "primary gradients recomputed without R0 (no physical features); role robust_excl_R0",
+      "gated_wide_grid": "most complete rung refitted with alphas 0..6 and taus 0 (= ungated) ..0.7; reports how often the gate is used, switched off, or replaced by ungated addition",
+      "fold_diagnostics": "per-fold cells, positives and prevalence (fold_diagnostics.csv); flagged when the range exceeds 25 percentage points",
+      "learner_logistic": "most complete rung refitted with a standardised logistic regression as the physical learner (all operators, nulls and bootstrap), so verdicts do not hinge on XGBoost",
+      "without_photos": "top rung refitted without the geotagged photo sources (timeliness check)"
+    },
+    "label_ai4g": {
+      "pixel_m": 20.0,
+      "cell_fraction": 0.25,
+      "card_filters": true,
+      "note": "AI4G detections inside the event window; a cell is flooded when detections cover >= 25% of it (20 m pixels assumed, per the dataset's Sentinel-1 input resolution)"
+    },
+    "analysis_plan": {
+      "fixed": "29 Sep 2026, v6, before any v6 acquisition. Seen at that point: v5.5.2 localisation statistics (label-free) and v5.5.0 results for Chennai_2015 and the architecture effects",
+      "research_questions": {
+        "RQ1": "At the most complete physical rung, does each fusion operator (legacy entropy-gated ADR, tuned gated, stacked late fusion, early fusion) change held-out AP? Pooled across cities by random-effects meta-analysis. Confirmatory set: every tier-A city.",
+        "RQ2": "Within a city, does the social layer's marginal value decline as physical completeness rises? Slope of the null-centred gain on held-out physical AP across the ordered ladder, tile-bootstrap CI, one-sided test.",
+        "RQ3": "Is the social layer's value general across cities, and what explains its variation? (a) random-effects meta-analysis of the per-city slopes and top-rung effects over every tier-A city; (b) pre-registered moderator: the social layer's localisation (log effective number of mention locations, label-free) in a mixed-effects meta-regression (REML, Knapp-Hartung, permutation p); (c) the localisable subset pooled as a conditional secondary analysis, whatever its size."
+      },
+      "co_primary_endpoints": [
+        "info_nats_fm_adj (cross-validated estimate of I(Y;S|R), the quantity the saturation definition is about)",
+        "dAP_stacked_fm_adj (operational ranking value)"
+      ],
+      "secondary_endpoints": [
+        "dAP_gated_fm, dAP_early_fm_adj, dAP_adr_legacy_fm (architectures, RQ1)",
+        "headroom-normalised gradients info_frac_fm_adj = I/H(Y|R) and dAPh_fm_adj = dAP/(1-AP)",
+        "all gradients without R0; ordering B"
+      ],
+      "primary_ordering": "A_terrain_first (B_surface_first is a robustness check of ordering dependence)",
+      "confirmatory_set": "gt_tier == A_authoritative (all such cities, localisable or not). v5.5 restricted the confirmatory set to localisable cities; v6 keeps localisation as the moderator instead, so no city is excluded on a property of its social layer",
+      "localisation_eligibility": {
+        "min_mentions": 100,
+        "min_effective_locations": 10,
+        "max_top_place_share": 0.4,
+        "basis": "label-free: computed from the located mentions in the primary window only (effective locations = 1/Herfindahl index of mention locations). Selecting on R0 information gain instead would bias the slope downward (regression to the mean at the first rung), so it is never used for selection.",
+        "role": "defines the conditional secondary set and the forest-plot marking only"
+      },
+      "multiplicity": "Holm across (tier-A cities) x (2 co-primary endpoints), ordering A, one-sided slope tests; headline tests: pooled RQ3 slope (confirmatory set) and the localisation moderator",
+      "meta_analysis": "REML tau^2 (fixed-point), Hartung-Knapp-Sidik-Jonkman CI with max(1,q) truncation (k < 10), I^2, 95% prediction interval (k >= 3); per-city SE = tile-bootstrap SD of the slope",
+      "sesoi": {
+        "dAP_stacked_fm": 0.01,
+        "dAP_gated_fm": 0.01,
+        "dAP_early_fm": 0.01,
+        "dAP_adr_legacy_fm": 0.01,
+        "info_frac_fm": 0.02
+      },
+      "sesoi_rationale": "0.01 AP: below the between-fold AP sd of every physical model in the v5.3-v5.4 runs and below operational relevance for ranking cells; 0.02 of the physical model's remaining held-out uncertainty for information",
+      "equivalence": "'saturated' only if the 90% tile-bootstrap interval of the null-centred effect lies inside +/- SESOI (TOST at 5%); 'informative' needs the 95% interval above 0 and p_null <= 0.05; 'harmful' needs the 95% interval below 0; otherwise 'inconclusive'",
+      "density_placebo": true,
+      "density_placebo_design": "GHSL GHS-POP (epoch nearest the event; WorldPop fallback) smoothed with the social kernel and transform replaces the social layer through the full ordering-A ladder (same folds, nulls, bootstrap; no early fusion). A decline that a pure population layer also shows is not evidence about event information. Control: the real social layer's gain at the top rung with population added to the physical model.",
+      "blocking_check": "label correlogram per city; the distance at which autocorrelation drops below 0.1 is compared with tile + buffer (2.5 km) and reported",
+      "exploratory": "meta-regression on physical lift and log mentions (descriptive)",
+      "moderator": {
+        "name": "log_effective_locations",
+        "outcomes": [
+          "gradient slopes (co-primary)",
+          "top-rung effects (RQ1 metrics)"
+        ],
+        "test": "two-sided; permutation p reported and used for k < 10",
+        "expectation": "none pre-specified in sign for slopes; positive for top-rung gains"
+      }
+    },
+    "reporting": {
+      "primary": "per-fold metrics (mean over the 5 spatial folds), null-centred: the reported effect is the observed value minus the mean of the toroidal-null replicates",
+      "primary_metrics": [
+        "info_nats_fm_adj",
+        "dAP_stacked_fm_adj",
+        "dAP_early_fm_adj",
+        "dAP_gated_fm"
+      ],
+      "gradient_x": "AP_recal_fm (per-fold physical skill)",
+      "secondary": "pooled out-of-fold metrics and the headroom-normalised dAPh_stacked, reported for continuity; the headroom denominator (1-AP) shrinks along the ladder and amplifies late rungs",
+      "why_null_centred": "a toroidal-shifted social layer carries no flood information yet still moves AP a little (an extra smooth channel helps the learner), so raw deltas overstate the real gain",
+      "completeness": "all cities, rungs, orderings, channels, sensitivity variants and the localisation audit (T9) are reported, including null results"
+    },
+    "ground_truth": {
+      "tiers": {
+        "A_authoritative": "official event extent (CEMS, USGS data release, EA surveyed outline, NRSC)",
+        "A_authoritative_points": "official point observations (USGS high-water marks, municipal points); sparse",
+        "B_crowdsourced": "crowdsourced reports/maps; not independent of a social layer",
+        "C_satellite": "satellite-derived reference (Sentinel-1/2 change, AI4G, GFD); not independent truth"
+      },
+      "confirmatory_tier": "A_authoritative",
+      "event_specificity": "Copernicus EMS products are kept only if their satellite image was acquired inside the label event window; ArcGIS extent layers only if their date is inside it; EA outlines are selected by their record id",
+      "unmapped_cells": "cells outside a product's mapped area (EMS area of interest, USGS mapped-area boundary, depth-raster footprint, AI4G exclusion layer) are excluded as unknown, never scored as dry",
+      "circularity": [
+        "a Sentinel-1-derived label (s1_change, ai4g_sar) removes the Sentinel-1 rung from every ladder",
+        "a PetaBencana label removes PetaBencana from the social layer"
+      ],
+      "frozen_files": "each city's vector ground truth is downloaded once and stored as one canonical GeoPackage (WGS84; layers 'labels' and 'coverage') with a SHA-256 manifest; runs read that file, so labels cannot change silently between runs",
+      "verification": "every documented source URL is checked before the run and written to label_sources_status.csv"
+    }
+  },
+  "sha256": "5e1633391bbc99bb56ea3fb24368d7d4fd757696b9517a8839f7bcb8ef613e3d",
+  "written_utc": "2026-09-29T19:14:24.650806"
+}

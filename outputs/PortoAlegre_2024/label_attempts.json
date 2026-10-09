@@ -1,0 +1,29 @@
+[
+  {
+    "source": "arcgis_featureserver",
+    "gt_tier": "A_authoritative",
+    "positives": 32316,
+    "prevalence": 0.35294117647058826,
+    "valid_cells": 91562,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 32319,
+      "prevalence": 0.22787460868093748,
+      "source": "arcgis_featureserver",
+      "features": 13466,
+      "point_buffer_m": 0.0,
+      "service": "https://arcgis.jrc.ec.europa.eu/server/rest/services/Hosted/EMSN194_Vector_Layers/FeatureServer",
+      "layers": [
+        "Extent Temporal Evolution 04/05/2024",
+        "Extent Temporal Evolution 06/05/2024",
+        "Extent Temporal Evolution 08/05/2024",
+        "Extent Temporal Evolution 10/05/2024"
+      ],
+      "gt_tier": "A_authoritative",
+      "valid_cells": 91562,
+      "coverage_fraction": 0.6456,
+      "coverage_polygons": 4
+    }
+  }
+]

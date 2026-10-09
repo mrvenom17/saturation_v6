@@ -1,0 +1,34 @@
+[
+  {
+    "source": "copernicus_ems",
+    "gt_tier": "A_authoritative",
+    "positives": 2576,
+    "prevalence": 0.13152251608291637,
+    "valid_cells": 19586,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 2576,
+      "prevalence": 0.017973514184842523,
+      "source": "copernicus_ems",
+      "features": 406,
+      "point_buffer_m": 0.0,
+      "activation": "EMSR659",
+      "archives": [
+        "EMSR659_AOI01_DEL_PRODUCT_v2.zip",
+        "EMSR659_AOI02_DEL_PRODUCT_v2.zip",
+        "EMSR659_AOI03_DEL_PRODUCT_v1.zip",
+        "EMSR659_AOI04_DEL_PRODUCT_v1.zip"
+      ],
+      "n_archives_listed": 4,
+      "layers": [
+        "EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2",
+        "EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2",
+        "EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1",
+        "EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1"
+      ],
+      "valid_cells": 19586,
+      "gt_tier": "A_authoritative"
+    }
+  }
+]

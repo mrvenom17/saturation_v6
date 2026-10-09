@@ -1,0 +1,7 @@
+source,status,n,detail
+gdelt_bigquery,ok,292,0s
+gdelt_rawfiles,skip,0,GDELT already obtained via BigQuery
+google_news_rss,ok,57,12s
+reddit_arcticshift,ok,184,64s
+petabencana,unavailable,0,not an Indonesian city
+wikimedia_commons,unavailable,0,GET failed after 4 tries: https://commons.wikimedia.org/w/api.php (HTTP 429)

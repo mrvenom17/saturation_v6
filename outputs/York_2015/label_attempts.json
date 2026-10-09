@@ -1,0 +1,30 @@
+[
+  {
+    "source": "file_url:ea",
+    "gt_tier": "A_authoritative",
+    "positives": 514,
+    "prevalence": 0.0475002310322521,
+    "valid_cells": 10821,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 514,
+      "prevalence": 0.0475002310322521,
+      "source": "file_url",
+      "features": 1,
+      "point_buffer_m": 0.0,
+      "files": [
+        {
+          "name": "EA_RFO_4084890_OuseDerwent_2015-12-25.geojson",
+          "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.27083?f=json",
+          "sha256": "f947819777adc9de650c846f6467526699e43590b5198c1b7508264a72eaf414",
+          "features": 1
+        }
+      ],
+      "gt_tier": "A_authoritative",
+      "geom_types": [
+        "MultiPolygon"
+      ]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+source,status,n,detail,retry
+gdelt_bigquery,ok,3325,1s,False
+gdelt_rawfiles,skip,0,GDELT already obtained via BigQuery,
+google_news_rss,ok,94,13s,False
+reddit_arcticshift,ok,174,9s,False
+youtube,ok,242,5s,False
+petabencana,not_applicable,0,not an Indonesian city,False
+wikimedia_commons,ok,4,51s,False

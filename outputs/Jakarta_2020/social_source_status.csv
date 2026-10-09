@@ -1,0 +1,7 @@
+source,status,n,detail,retry
+gdelt_bigquery,ok,12341,3s,False
+gdelt_rawfiles,skip,0,GDELT already obtained via BigQuery,
+google_news_rss,ok,306,17s,False
+reddit_arcticshift,ok,828,13s,False
+youtube,ok,353,4s,False
+wikimedia_commons,ok,0,101s,False

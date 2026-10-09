@@ -1,0 +1,33 @@
+[
+  {
+    "source": "copernicus_ems",
+    "gt_tier": "A_authoritative",
+    "positives": 463,
+    "prevalence": 0.09201112877583466,
+    "valid_cells": 5032,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 463,
+      "prevalence": 0.03349489980467337,
+      "source": "copernicus_ems",
+      "features": 641,
+      "point_buffer_m": 0.0,
+      "activation": "EMSR720",
+      "archives": [
+        "EMSR720_AOI02_DEL_PRODUCT_v1.zip",
+        "EMSR720_AOI02_DEL_MONIT01_v1.zip",
+        "EMSR720_AOI03_DEL_PRODUCT_v1.zip"
+      ],
+      "n_archives_listed": 3,
+      "layers": [
+        "EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1",
+        "EMSR720_AOI02_DEL_MONIT01_observedEventA_v1.shp:EMSR720_AOI02_DEL_MONIT01_observedEventA_v1",
+        "EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1",
+        "EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1"
+      ],
+      "valid_cells": 5032,
+      "gt_tier": "A_authoritative"
+    }
+  }
+]

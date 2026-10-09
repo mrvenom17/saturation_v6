@@ -1,0 +1,11 @@
+city,status,label_source,gt_tier,confirmatory,positives,cells_analysed,prevalence,mentions,prereg_sha256,pipeline_version,from_earlier_session,error
+Chennai_2015,ok,file_url:nrsc,A_authoritative,True,9360,41140,0.22751579970831307,3029,5e163339,v6.0.0,False,
+Valencia_2024,ok,copernicus_ems,A_authoritative,True,10460,32585,0.321006598127973,1802,5e163339,v6.0.0,False,
+EmiliaRomagna_2023a,ok,copernicus_ems,A_authoritative,True,2576,19566,0.13165695594398447,262,5e163339,v6.0.0,False,
+Forli_2023b,ok,copernicus_ems,A_authoritative,True,3856,84967,0.045382324902609246,239,5e163339,v6.0.0,False,
+York_2015,ok,file_url:ea,A_authoritative,True,514,10820,0.04750462107208873,5,5e163339,v6.0.0,False,
+Carlisle_2015,ok,file_url:ea,A_authoritative,True,1234,14029,0.08796065293320977,2,5e163339,v6.0.0,False,
+PortoAlegre_2024,ok,arcgis_featureserver,A_authoritative,True,32045,79961,0.40075786946136244,219,5e163339,v6.0.0,False,
+TaquariValley_2024,ok,copernicus_ems,A_authoritative,True,448,4832,0.09271523178807947,60,5e163339,v6.0.0,False,
+Houston_SanJacinto_2017,ok,usgs_sciencebase,A_authoritative,True,25594,87395,0.29285428228159505,437,5e163339,v6.0.0,False,
+Jakarta_2020,ok,petabencana_area,B_crowdsourced,False,1054,63941,0.016483946137845828,4482,5e163339,v6.0.0,False,

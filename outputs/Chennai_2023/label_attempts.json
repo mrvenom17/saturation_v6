@@ -1,0 +1,17 @@
+[
+  {
+    "source": "ai4g_sar",
+    "error": "AI4G: 0 detections in 2023-12-02..2023-12-14, none after the dataset-card filters",
+    "accepted": false
+  },
+  {
+    "source": "s2_change",
+    "error": "only 18% of cells observed cloud-free after the event (< 50%)",
+    "accepted": false
+  },
+  {
+    "source": "s1_change",
+    "error": "no usable Sentinel-1 event/baseline pair (event scenes=0); nearest acquisitions: ['2023-10-25', '2023-11-06', '2023-11-18', '2023-11-30', '2024-01-17']",
+    "accepted": false
+  }
+]

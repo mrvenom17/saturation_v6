@@ -1,0 +1,24 @@
+[
+  {
+    "source": "petabencana_area",
+    "gt_tier": "B_crowdsourced",
+    "positives": 1054,
+    "prevalence": 0.014708139713372686,
+    "valid_cells": 71661,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 1054,
+      "prevalence": 0.014708139713372686,
+      "source": "petabencana_reports",
+      "features": 255,
+      "point_buffer_m": 150.0,
+      "endpoint": "reports/archive",
+      "window": [
+        "2019-12-31 00:00:00",
+        "2020-01-04 23:59:59.999999"
+      ],
+      "gt_tier": "B_crowdsourced"
+    }
+  }
+]

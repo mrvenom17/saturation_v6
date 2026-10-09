@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/content/saturation_code_v6_1_1/orchestrator.py", line 1751, in run_all
+    raise RuntimeError(
+    ...<4 lines>...
+          "ALLOW_STALE_INPUTS=True to analyse them anyway as provisional")
+RuntimeError: Jakarta_2020: the saved inputs are INCOMPLETE (source youtube: GET failed after 4 tries: https://www.googleapis.com/youtube/v3/search (HTTP 429)). Run RUN_MODE='acquire' for this city first (cached downloads make it quick), or set ALLOW_STALE_INPUTS=True to analyse them anyway as provisional

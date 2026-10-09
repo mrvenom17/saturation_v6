@@ -1,0 +1,30 @@
+[
+  {
+    "source": "file_url:nrsc",
+    "gt_tier": "A_authoritative",
+    "positives": 9428,
+    "prevalence": 0.22350765729458064,
+    "valid_cells": 42182,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 9428,
+      "prevalence": 0.22350765729458064,
+      "source": "file_url",
+      "features": 2009,
+      "point_buffer_m": 0.0,
+      "files": [
+        {
+          "name": "Chennai2015_NRSC_inundation_zone.kml",
+          "url": "https://data.opencity.in/dataset/866141ab-3a3f-4dc0-8092-421d97ba29a2/resource/2056abd6-26d7-413b-9dfa-e63cbbf41ee7/download/7cb3cecf-a95a-4786-8032-9c7417655d24.kml",
+          "sha256": "fa6943b2916d625dbc4de3b43cbe4d768a956b2f584fa3c73244fae32cee7a2a",
+          "features": 2009
+        }
+      ],
+      "gt_tier": "A_authoritative",
+      "geom_types": [
+        "MultiPolygon"
+      ]
+    }
+  }
+]

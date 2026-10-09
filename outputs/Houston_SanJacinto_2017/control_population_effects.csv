@@ -1,0 +1,5 @@
+rung,metric,estimate,ci90_low,ci90_high,ci95_low,ci95_high,p_null,sesoi,verdict,null_centred,n_boot,within_sesoi,reading
+R5_+sar_event+population,info_nats_fm,0.002312204892462504,0.0009914071572319626,0.0036568005273192573,0.0008764310588688543,0.003933119852420187,0.05,,informative,True,500,False,informative
+R5_+sar_event+population,info_frac_fm,0.0067301048004742925,0.002902041155353628,0.010448028746454957,0.0024921216890913755,0.011159519911948327,0.05,0.02,informative,True,500,True,negligible (non-zero but within SESOI)
+R5_+sar_event+population,dAP_stacked_fm,0.0035494091861361815,0.0014997493007721957,0.00571519603505162,0.0011686453803075197,0.006282878770569957,0.03,0.01,informative,True,500,True,negligible (non-zero but within SESOI)
+R5_+sar_event+population,dAP_gated_fm,0.0007457403614915929,-0.0016338799285747158,0.0033379609398462946,-0.0021284362478265068,0.003856550496990459,0.52,0.01,saturated,True,500,True,equivalent to zero (within SESOI)

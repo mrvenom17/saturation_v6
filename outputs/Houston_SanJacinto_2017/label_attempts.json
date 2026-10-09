@@ -1,0 +1,31 @@
+[
+  {
+    "source": "usgs_sciencebase",
+    "gt_tier": "A_authoritative",
+    "positives": 27565,
+    "prevalence": 0.30837472591399295,
+    "valid_cells": 89388,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 27568,
+      "prevalence": 0.14942410363424483,
+      "source": "usgs_sciencebase",
+      "features": 1,
+      "point_buffer_m": 0.0,
+      "item": "5aa023ebe4b0b1c392e6881b",
+      "title": "San Jacinto River",
+      "files_used": [
+        "San_Jacinto.zip"
+      ],
+      "n_rasters": 0,
+      "depth_min_m": 0.0,
+      "raster_coverage": false,
+      "rasters_used": 0,
+      "valid_cells": 89388,
+      "coverage_fraction": 0.4845,
+      "coverage_polygons": 1,
+      "gt_tier": "A_authoritative"
+    }
+  }
+]

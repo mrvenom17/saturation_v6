@@ -1,0 +1,71 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backends/backend_pdf.py", line 2786, in print_pdf
+    self.figure.draw(renderer)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/artist.py", line 94, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/figure.py", line 3257, in draw
+    mimage._draw_list_compositing_images(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        renderer, self, artists, self.suppressComposite)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/image.py", line 134, in _draw_list_compositing_images
+    a.draw(renderer)
+    ~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/axes/_base.py", line 3181, in draw
+    mimage._draw_list_compositing_images(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        renderer, self, artists, self.get_figure(root=True).suppressComposite)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/image.py", line 134, in _draw_list_compositing_images
+    a.draw(renderer)
+    ~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/artist.py", line 65, in draw_wrapper
+    renderer.stop_rasterizing()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backends/backend_mixed.py", line 98, in stop_rasterizing
+    slice_y, slice_x = cbook._get_nonzero_slices(img[..., 3])
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/cbook.py", line 2125, in _get_nonzero_slices
+    x_nz, = buf.any(axis=0).nonzero()
+            ~~~~~~~^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py", line 65, in _any
+    return umr_any(a, axis, dtype, out, keepdims)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/saturation_code_v6_1_1/orchestrator.py", line 1757, in run_all
+    r = analyse_city(ctx, prereg, profile, out_root, cache_root, log)
+  File "/content/saturation_code_v6_1_1/orchestrator.py", line 904, in analyse_city
+    make_city_maps(city, G, data, results["A_terrain_first"], out)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/saturation_code_v6_1_1/orchestrator.py", line 929, in make_city_maps
+    fig.savefig(os.path.join(out, "fig_maps.pdf"))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backend_bases.py", line 2184, in print_figure
+    result = print_method(
+        filename,
+    ...<3 lines>...
+        bbox_inches_restore=_bbox_inches_restore,
+        **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ~~~~^
+        *args, **{k: v for k, v in kwargs.items() if k not in skip}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backends/backend_pdf.py", line 2794, in print_pdf
+    file.close()
+    ~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/matplotlib/backends/backend_pdf.py", line 864, in close
+    self.fh.close()
+    ~~~~~~~~~~~~~^^
+KeyboardInterrupt
