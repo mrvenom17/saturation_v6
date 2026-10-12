@@ -1,0 +1,26 @@
+[
+  {
+    "source": "canonical_gpkg",
+    "gt_tier": "A_authoritative",
+    "positives": 10477,
+    "prevalence": 0.2737725051608351,
+    "valid_cells": 38269,
+    "accepted": true,
+    "details": {
+      "points_inside_grid": 0,
+      "positive_cells": 10477,
+      "prevalence": 0.2737725051608351,
+      "source": "canonical_gpkg",
+      "features": 2220,
+      "point_buffer_m": 0.0,
+      "frozen_file": "Valencia_2024_labels.gpkg",
+      "sha256": "48f52f5eb190a928",
+      "frozen_source": "copernicus_ems",
+      "features_in_bbox": 2220,
+      "gt_tier": "A_authoritative",
+      "valid_cells": 38269,
+      "coverage_fraction": 1.0,
+      "coverage_polygons": 6
+    }
+  }
+]

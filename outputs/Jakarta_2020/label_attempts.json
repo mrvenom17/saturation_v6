@@ -1,24 +1,25 @@
 [
   {
-    "source": "petabencana_area",
+    "source": "canonical_gpkg",
     "gt_tier": "B_crowdsourced",
-    "positives": 1054,
-    "prevalence": 0.014708139713372686,
+    "positives": 2520,
+    "prevalence": 0.03516557123121363,
     "valid_cells": 71661,
     "accepted": true,
     "details": {
       "points_inside_grid": 0,
-      "positive_cells": 1054,
-      "prevalence": 0.014708139713372686,
-      "source": "petabencana_reports",
+      "positive_cells": 2520,
+      "prevalence": 0.03516557123121363,
+      "source": "canonical_gpkg",
       "features": 255,
-      "point_buffer_m": 150.0,
-      "endpoint": "reports/archive",
-      "window": [
-        "2019-12-31 00:00:00",
-        "2020-01-04 23:59:59.999999"
-      ],
-      "gt_tier": "B_crowdsourced"
+      "point_buffer_m": 250.0,
+      "frozen_file": "Jakarta_2020_labels.gpkg",
+      "sha256": "b7e93dd03f9c2e09",
+      "frozen_source": "petabencana_area",
+      "features_in_bbox": 255,
+      "gt_tier": "B_crowdsourced",
+      "coverage_polygons": 0,
+      "coverage_fraction": 1.0
     }
   }
 ]

@@ -1,6 +1,6 @@
 {
   "prereg": {
-    "version": "v6.1.1-2026-10",
+    "version": "v6.1.2-2026-10",
     "grid_m": 100,
     "max_cells": 260000,
     "grid_m_escalation": [
@@ -78,7 +78,8 @@
         "hand_max_m": 15.0,
         "cell_fraction": 0.25,
         "min_clear_fraction": 0.5
-      }
+      },
+      "report_buffer_applies_to": "v6.1.2: crowdsourced flood reports (PetaBencana, Jakarta) are buffered by report_buffer_m, live and from the frozen file alike. Up to v6.1.1 the code used the registry's 150 m and never read report_buffer_m"
     },
     "physical_groups": {
       "terrain": [
@@ -230,7 +231,9 @@
           0.7
         ],
         "rule": "(alpha, tau) chosen on training tiles by AP; alpha = 0 always admissible"
-      }
+      },
+      "null_mode": "full_raster",
+      "null_construction": "v6.1.2: each social layer is built on the COMPLETE n_rows x n_cols grid rectangle (the kernel density of the mentions), shifted toroidally as a whole, and then read at the analysed cells; the population placebo is shifted the same way (population is known on the study-area cells and 0 outside them). Up to v6.1.1 the shifted raster held only the analysed cells and every other cell was set to 0, so in events with many excluded cells most of each shifted layer was zeros and the null did not keep the layer's autocorrelation. Every null-centred effect, p_null and verdict depends on it; the legacy ADR lens and the un-centred metrics do not"
     },
     "robustness": {
       "added": "v5.4.1, after the Chennai_2015 and Valencia_2024 runs; reported as robustness, never as primary",
@@ -248,7 +251,7 @@
       "note": "AI4G detections inside the event window; a cell is flooded when detections cover >= 25% of it (20 m pixels assumed, per the dataset's Sentinel-1 input resolution)"
     },
     "analysis_plan": {
-      "fixed": "29 Sep 2026, v6, before any v6 acquisition. Seen at that point: v5.5.2 localisation statistics (label-free) and v5.5.0 results for Chennai_2015 and the architecture effects. AMENDED 2 Oct 2026 (v6.1) AFTER the v6.0 run of ten cities had been analysed and reviewed: see 'v61_amendment'. The amendment changes no endpoint, test, SESOI or verdict rule. AMENDED again 3 Oct 2026 (v6.1.1): see 'v611_amendment'",
+      "fixed": "29 Sep 2026, v6, before any v6 acquisition. Seen at that point: v5.5.2 localisation statistics (label-free) and v5.5.0 results for Chennai_2015 and the architecture effects. AMENDED 2 Oct 2026 (v6.1) AFTER the v6.0 run of ten cities had been analysed and reviewed: see 'v61_amendment'. The amendment changes no endpoint, test, SESOI or verdict rule. AMENDED again 3 Oct 2026 (v6.1.1): see 'v611_amendment'. AMENDED again 9 Oct 2026 (v6.1.2): see 'v612_amendment'",
       "research_questions": {
         "RQ1": "At the most complete physical rung, does each fusion operator (legacy entropy-gated ADR, tuned gated, stacked late fusion, early fusion) change held-out AP? Pooled across cities by random-effects meta-analysis. Confirmatory set: every tier-A city.",
         "RQ2": "Within a city, does the social layer's marginal value decline as physical completeness rises? Slope of the null-centred gain on held-out physical AP across the ordered ladder, tile-bootstrap CI, one-sided test.",
@@ -326,6 +329,26 @@
         "why": "(1) Wikimedia Commons returned at most 500 files per ~9 km tile, so dense tiles (two of York's four) were truncated and their photos never examined; (2) a gazetteer name matched the END of a longer GDELT location ('Getulio Vargas, Rio Grande Do Sul' -> 'Vargas'): 8 of Porto Alegre's 80 primary mentions, 0-0.8% in the other nine cities",
         "label_free": "both changes act on documents and place names only",
         "status": "a deviation from the v6.1 pre-registration (4a03528b)"
+      },
+      "disaster_of": {
+        "EmiliaRomagna_2023a": "EmiliaRomagna_May2023",
+        "Forli_2023b": "EmiliaRomagna_May2023",
+        "PortoAlegre_2024": "RioGrandeDoSul_May2024",
+        "TaquariValley_2024": "RioGrandeDoSul_May2024"
+      },
+      "compare_null_with_archive": "d55d6b06",
+      "post_hoc_outputs": {
+        "T12": "pooled estimates (confirmatory set) with one estimate per disaster (cities of one disaster combined by inverse-variance weights first), leaving each multi-city disaster out, and without the events whose CV block (tile + buffer) is shorter than the label's autocorrelation range",
+        "T13": "calibration of the out-of-fold scores at the top rung (calibration intercept and slope, ECE over 10 equal-count bins, Brier), pooled and as the mean over spatial folds; nothing is refitted",
+        "T14": "the null-centred top-rung effects and verdicts next to those of the archived d55d6b06 run (v6.1.1 null)",
+        "status": "post hoc, added after the d55d6b06 results were seen: reported as robustness checks, never as headline results"
+      },
+      "v612_amendment": {
+        "seen_before_amending": "the complete d55d6b06 analysis of the ten study cities (final run of 8 Oct 2026) and two simulated external reviews of it",
+        "why": "(1) the toroidal null zero-filled every cell outside the analysed set (an implementation defect: the pre-registered null is a shift of the real layer that keeps its autocorrelation); (2) Jakarta's crowdsourced reports were buffered 150 m although label.report_buffer_m is 250 m (implementation did not follow the plan); (3) disclosure, no protocol change: the YouTube source, which is on the pre-registered source list, had been switched off for want of an API key in the first d55d6b06 run (5 Oct) and was switched on for the re-acquisition of 6-7 Oct, after the 5 Oct results had been seen; the 8 Oct run is the d55d6b06 result of record and the 5 Oct run is its sensitivity check; (4) post-hoc robustness outputs T12-T14 (post_hoc_outputs)",
+        "label_free": "(1) and (4) use no label in their construction; (2) changes only the Jakarta label (tier B, never pooled); (3) changes nothing",
+        "unchanged": "endpoints, tests, SESOI, verdict rules, ladders, model, CV design, study set and sources",
+        "status": "a deviation from the v6.1.1 pre-registration (d55d6b06); results must be reported as post-amendment, with the d55d6b06 numbers beside them (T14)"
       }
     },
     "reporting": {
@@ -359,6 +382,6 @@
       "verification": "every documented source URL is checked before the run and written to label_sources_status.csv"
     }
   },
-  "sha256": "d55d6b06f265a6eb75a37e7e15b45662cee256a0012af33effb8f8cb007ef828",
-  "written_utc": "2026-10-03T19:34:34.049533"
+  "sha256": "7442f3832524b96bd0ff319765fac43fcc8806e35549910d1816d31e28b4e47a",
+  "written_utc": "2026-10-09T20:07:41.670393"
 }

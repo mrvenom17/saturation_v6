@@ -1,5 +1,5 @@
 rung,fold,alpha,tau
-R0_none,0,2.0,0.3
+R0_none,0,0.0,0.3
 R0_none,1,0.0,0.3
 R0_none,2,0.0,0.3
 R0_none,3,0.0,0.3

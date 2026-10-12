@@ -1,6 +1,6 @@
 [
   {
-    "source": "copernicus_ems",
+    "source": "canonical_gpkg",
     "gt_tier": "A_authoritative",
     "positives": 463,
     "prevalence": 0.09201112877583466,
@@ -10,24 +10,17 @@
       "points_inside_grid": 0,
       "positive_cells": 463,
       "prevalence": 0.03349489980467337,
-      "source": "copernicus_ems",
+      "source": "canonical_gpkg",
       "features": 641,
       "point_buffer_m": 0.0,
-      "activation": "EMSR720",
-      "archives": [
-        "EMSR720_AOI02_DEL_PRODUCT_v1.zip",
-        "EMSR720_AOI02_DEL_MONIT01_v1.zip",
-        "EMSR720_AOI03_DEL_PRODUCT_v1.zip"
-      ],
-      "n_archives_listed": 3,
-      "layers": [
-        "EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1",
-        "EMSR720_AOI02_DEL_MONIT01_observedEventA_v1.shp:EMSR720_AOI02_DEL_MONIT01_observedEventA_v1",
-        "EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1",
-        "EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1"
-      ],
+      "frozen_file": "TaquariValley_2024_labels.gpkg",
+      "sha256": "05fb9942022bcd99",
+      "frozen_source": "copernicus_ems",
+      "features_in_bbox": 641,
+      "gt_tier": "A_authoritative",
       "valid_cells": 5032,
-      "gt_tier": "A_authoritative"
+      "coverage_fraction": 0.364,
+      "coverage_polygons": 3
     }
   }
 ]

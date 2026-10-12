@@ -1,0 +1,18 @@
+check,ok,detail,sec
+Earth Engine,True,2,0.6
+BigQuery (GDELT),True,dry run OK (0.00 GB),0.6
+GDELT public files,True,200,0.1
+Google News RSS,True,200,0.4
+Arctic Shift (Reddit),True,522,19.5
+OpenStreetMap Nominatim,True,200,0.0
+GeoNames extracts,True,200,0.6
+OpenCity (labels),True,200,0.9
+PetaBencana,True,200,0.9
+Copernicus EMS,True,200,1.2
+USGS ScienceBase,True,200,0.3
+Environment Agency,True,200,2.0
+Wikimedia Commons API,True,200,0.2
+Flickr API,False,RuntimeError: FLICKR_API_KEY not set in Colab Secrets (optional source skipped),0.0
+YouTube API key,True,set,0.0
+"NER models ['en', 'es', 'id', 'it', 'pt']",True,"[True, True, True, True, True]",1.9
+"Sentiment models ['en', 'es', 'id', 'it', 'pt']",True,"[True, True, True, True, True]",2.7

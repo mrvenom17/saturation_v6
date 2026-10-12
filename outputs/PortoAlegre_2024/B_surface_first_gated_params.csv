@@ -1,5 +1,5 @@
 rung,fold,alpha,tau
-R0_none,0,2.0,0.3
+R0_none,0,0.0,0.3
 R0_none,1,0.0,0.3
 R0_none,2,0.0,0.3
 R0_none,3,0.0,0.3
@@ -12,7 +12,7 @@ R1_+surface,4,0.0,0.3
 R2_+forcing,0,0.0,0.3
 R2_+forcing,1,0.0,0.3
 R2_+forcing,2,0.0,0.3
-R2_+forcing,3,0.25,0.3
+R2_+forcing,3,0.0,0.3
 R2_+forcing,4,0.0,0.3
 R3_+terrain,0,0.0,0.3
 R3_+terrain,1,0.0,0.3

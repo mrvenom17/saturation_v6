@@ -1,6 +1,6 @@
 [
   {
-    "source": "file_url:ea",
+    "source": "canonical_gpkg",
     "gt_tier": "A_authoritative",
     "positives": 1234,
     "prevalence": 0.08791052219135143,
@@ -10,21 +10,16 @@
       "points_inside_grid": 0,
       "positive_cells": 1234,
       "prevalence": 0.08791052219135143,
-      "source": "file_url",
+      "source": "canonical_gpkg",
       "features": 1,
       "point_buffer_m": 0.0,
-      "files": [
-        {
-          "name": "EA_RFO_4078182_Carlisle_2015-12-05.geojson",
-          "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.26355?f=json",
-          "sha256": "357aab8fbb88d65e60732c858e5a59a49af7ab9130eafb32dcffab366d2bd2a9",
-          "features": 1
-        }
-      ],
+      "frozen_file": "Carlisle_2015_labels.gpkg",
+      "sha256": "81413b4c6f3c76de",
+      "frozen_source": "file_url:ea",
+      "features_in_bbox": 1,
       "gt_tier": "A_authoritative",
-      "geom_types": [
-        "MultiPolygon"
-      ]
+      "coverage_polygons": 0,
+      "coverage_fraction": 1.0
     }
   }
 ]

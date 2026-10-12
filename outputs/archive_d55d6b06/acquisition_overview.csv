@@ -1,0 +1,4 @@
+city,acquired,complete,mentions_primary,signal_type,localisable,pending,error
+TaquariValley_2024,True,True,59,"mixed signal (news 76%, social_media 24%)",False,,
+Houston_SanJacinto_2017,True,True,589,"mixed signal (news 77%, social_media 23%, geotagged_photo 0%)",False,,
+Jakarta_2020,True,True,3778,news-media signal,True,,

@@ -1,16 +1,16 @@
 {
-  "prereg_sha256": "d55d6b06f265a6eb75a37e7e15b45662cee256a0012af33effb8f8cb007ef828",
+  "prereg_sha256": "7442f3832524b96bd0ff319765fac43fcc8806e35549910d1816d31e28b4e47a",
   "profile": "full",
-  "started_utc": "2026-10-08T12:42:22.705958",
+  "started_utc": "2026-10-11T18:11:53.784009",
   "cities": {
     "Chennai_2015": {
       "city": "Chennai_2015",
       "event_date": "2015-12-02",
       "profile": "full",
       "stage_keys": {
-        "grid": "615d60cabf",
-        "physical": "a3f453a56d",
-        "labels": "b5be558e04"
+        "grid": "a9aa5a577a",
+        "physical": "beaab38215",
+        "labels": "2299d2d29c"
       },
       "study_box": {
         "min_lon": 80.12,
@@ -28,7 +28,7 @@
         "nr": 400,
         "nc": 251
       },
-      "n_cells": 42182,
+      "n_cells": 41919,
       "physical_meta": {
         "s1_event_scenes": 1
       },
@@ -51,53 +51,43 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "file_url:nrsc",
-      "label_source": "file_url:nrsc",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
-        "positive_cells": 9428,
-        "prevalence": 0.22350765729458064,
-        "source": "file_url",
+        "positive_cells": 9404,
+        "prevalence": 0.22433741262911805,
+        "source": "canonical_gpkg",
         "features": 2009,
         "point_buffer_m": 0.0,
-        "files": [
-          {
-            "name": "Chennai2015_NRSC_inundation_zone.kml",
-            "url": "https://data.opencity.in/dataset/866141ab-3a3f-4dc0-8092-421d97ba29a2/resource/2056abd6-26d7-413b-9dfa-e63cbbf41ee7/download/7cb3cecf-a95a-4786-8032-9c7417655d24.kml",
-            "sha256": "fa6943b2916d625dbc4de3b43cbe4d768a956b2f584fa3c73244fae32cee7a2a",
-            "features": 2009
-          }
-        ],
+        "frozen_file": "Chennai_2015_labels.gpkg",
+        "sha256": "c72936706d85f1f6",
+        "frozen_source": "file_url:nrsc",
+        "features_in_bbox": 2009,
         "gt_tier": "A_authoritative",
-        "geom_types": [
-          "MultiPolygon"
-        ],
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
         "attempts": [
           {
-            "source": "file_url:nrsc",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
-            "positives": 9428,
-            "prevalence": 0.22350765729458064,
-            "valid_cells": 42182,
+            "positives": 9404,
+            "prevalence": 0.22433741262911805,
+            "valid_cells": 41919,
             "accepted": true,
             "details": {
               "points_inside_grid": 0,
-              "positive_cells": 9428,
-              "prevalence": 0.22350765729458064,
-              "source": "file_url",
+              "positive_cells": 9404,
+              "prevalence": 0.22433741262911805,
+              "source": "canonical_gpkg",
               "features": 2009,
               "point_buffer_m": 0.0,
-              "files": [
-                {
-                  "name": "Chennai2015_NRSC_inundation_zone.kml",
-                  "url": "https://data.opencity.in/dataset/866141ab-3a3f-4dc0-8092-421d97ba29a2/resource/2056abd6-26d7-413b-9dfa-e63cbbf41ee7/download/7cb3cecf-a95a-4786-8032-9c7417655d24.kml",
-                  "sha256": "fa6943b2916d625dbc4de3b43cbe4d768a956b2f584fa3c73244fae32cee7a2a",
-                  "features": 2009
-                }
-              ],
+              "frozen_file": "Chennai_2015_labels.gpkg",
+              "sha256": "c72936706d85f1f6",
+              "frozen_source": "file_url:nrsc",
+              "features_in_bbox": 2009,
               "gt_tier": "A_authoritative",
-              "geom_types": [
-                "MultiPolygon"
-              ]
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
             }
           }
         ]
@@ -146,19 +136,19 @@
           "madras"
         ],
         "gazetteer_names": 336,
-        "outside_towns": 121,
-        "outside_names": 173,
+        "outside_towns": 120,
+        "outside_names": 172,
         "licence": "GeoNames, CC BY 4.0",
         "names": 336
       },
       "outside_places": {
         "available": true,
-        "n_names": 173,
+        "n_names": 172,
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 36,
-        "cache_hits": 1737,
+        "geocoder_calls": 0,
+        "cache_hits": 1773,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -198,7 +188,7 @@
             0.053
           ],
           [
-            "Manali",
+            "manali",
             0.046
           ]
         ],
@@ -221,7 +211,7 @@
         "primary": {
           "mentions": 3031,
           "mentions_in_grid": 3031,
-          "cells_with_signal": 42182,
+          "cells_with_signal": 41919,
           "by_source": {
             "gdelt_bigquery": 2931,
             "reddit_arcticshift": 75,
@@ -308,7 +298,7 @@
             0.054
           ],
           [
-            "Manali",
+            "manali",
             0.053
           ]
         ],
@@ -339,8 +329,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T12:42:25",
-      "acquired_utc": "2026-10-06T13:31:16",
+      "analysed_utc": "2026-10-11T18:11:55",
+      "acquired_utc": "2026-10-10T06:05:23",
       "label_caveat": "NRSC inundation zone as redistributed by OpenCity: the source states neither the satellite sensor nor the image date (dataset page re-checked 2 Oct 2026), so the label cannot be tied to a day of the event",
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -366,134 +356,144 @@
         "S_src_reddit_arcticshift",
         "S_src_youtube"
       ],
-      "cells_analysed": 41403,
+      "cells_analysed": 41140,
       "cells_excluded": 779,
-      "data_fingerprint": "31ce2e8d834e1f09",
+      "data_fingerprint": "69d81d87e9190897",
       "label_corr_range_m": 3000.0,
       "cv_tile_m": 2500.0,
       "cv_tile_rule": "correlogram range 3000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 100400,
+        "study_area_cells": 41919,
+        "analysed_cells": 41140,
+        "study_area_share_of_raster": 0.4175,
+        "analysed_share_of_raster": 0.4098,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": -0.005912874707257073,
+          "estimate": -0.0007157348282142114,
           "ci95": [
-            -0.016587989973583177,
-            0.0026323903689434032
+            -0.011790252416191112,
+            0.0067842125718236375
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.011685334207988151,
+          "estimate": -0.0013947811392571252,
           "ci95": [
-            -0.03101312415538744,
-            0.0051522928794775855
+            -0.022213228980916707,
+            0.013482554964676501
           ],
-          "verdict": "inconclusive"
+          "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.011999246523481926,
+          "estimate": -0.005623964164026276,
           "ci95": [
-            -0.03919267365407551,
-            0.008080422323603453
+            -0.02815175023941022,
+            0.015762275935959996
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.009493769129632706,
+          "estimate": -0.0030907290894685146,
           "ci95": [
-            -0.03500520664532477,
-            0.010858150309676939
+            -0.025391805453896524,
+            0.01523042855773169
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009475373462789916,
+          "estimate": 0.003897866281556535,
           "ci95": [
-            -0.03065183567754499,
-            0.011161452754763017
+            -0.013416682091444972,
+            0.0251310490950268
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.007933887112446303,
+          "estimate": -0.009767707236890133,
           "ci95": [
-            -0.015914619372715964,
-            0.002357170887251733
+            -0.019418747684930456,
+            0.003583670605721278
           ],
           "verdict": "inconclusive"
         }
       },
-      "saturation_rung_A_terrain_first": null,
+      "saturation_rung_A_terrain_first": "R3_+hydrography",
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": -0.005912874707257073,
+          "estimate": -0.0007157348282142114,
           "ci95": [
-            -0.016587989973583177,
-            0.0026323903689434032
+            -0.011790252416191112,
+            0.0067842125718236375
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.011685334207988151,
+          "estimate": -0.0013947811392571252,
           "ci95": [
-            -0.03101312415538744,
-            0.0051522928794775855
+            -0.022213228980916707,
+            0.013482554964676501
           ],
-          "verdict": "inconclusive"
+          "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.011999246523481926,
+          "estimate": -0.005623964164026276,
           "ci95": [
-            -0.03919267365407551,
-            0.008080422323603453
+            -0.02815175023941022,
+            0.015762275935959996
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.009493769129632706,
+          "estimate": -0.0030907290894685146,
           "ci95": [
-            -0.03500520664532477,
-            0.010858150309676939
+            -0.025391805453896524,
+            0.01523042855773169
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009475373462789916,
+          "estimate": 0.003897866281556535,
           "ci95": [
-            -0.03065183567754499,
-            0.011161452754763017
+            -0.013416682091444972,
+            0.0251310490950268
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.007933887112446303,
+          "estimate": -0.009767707236890133,
           "ci95": [
-            -0.015914619372715964,
-            0.002357170887251733
+            -0.019418747684930456,
+            0.003583670605721278
           ],
           "verdict": "inconclusive"
         }
       },
-      "saturation_rung_B_surface_first": null,
+      "saturation_rung_B_surface_first": "R4_+hydrography",
       "fold_prevalence_range": [
-        0.1618,
-        0.2668
+        0.2041,
+        0.2965
       ],
       "population": {
         "source": "ghsl",
         "asset": "JRC/GHSL/P2023A/GHS_POP/2015",
         "native_m": 100
       },
-      "social_population_spearman": 0.800477539417653,
-      "pipeline_version": "v6.1.1"
+      "social_population_spearman": 0.7985109543972415,
+      "pipeline_version": "v6.1.2"
     },
     "Valencia_2024": {
       "city": "Valencia_2024",
       "event_date": "2024-10-30",
       "profile": "full",
       "stage_keys": {
-        "grid": "10490e75a5",
-        "physical": "9c421b20df",
-        "labels": "a6fcbc4bec"
+        "grid": "4e795b1ca1",
+        "physical": "6ff3351ddc",
+        "labels": "f2af6bd263"
       },
       "study_box": {
         "min_lon": -0.5,
@@ -534,41 +534,25 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "copernicus_ems",
-      "label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 10477,
         "prevalence": 0.2737725051608351,
-        "source": "copernicus_ems",
+        "source": "canonical_gpkg",
         "features": 2220,
         "point_buffer_m": 0.0,
-        "activation": "EMSR773",
-        "archives": [
-          "EMSR773_AOI01_DEL_PRODUCT_v1.zip",
-          "EMSR773_AOI01_DEL_MONIT01_v1.zip",
-          "EMSR773_AOI01_DEL_MONIT02_v1.zip",
-          "EMSR773_AOI01_DEL_MONIT03_v1.zip",
-          "EMSR773_AOI01_DEL_MONIT04_v1.zip",
-          "EMSR773_AOI03_DEL_PRODUCT_v1.zip"
-        ],
-        "n_archives_listed": 9,
-        "layers": [
-          "EMSR773_AOI01_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT01_maximumFloodExtentA_v1",
-          "EMSR773_AOI01_DEL_MONIT01_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT01_observedEventA_v1",
-          "EMSR773_AOI01_DEL_MONIT02_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT02_maximumFloodExtentA_v1",
-          "EMSR773_AOI01_DEL_MONIT02_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT02_observedEventA_v1",
-          "EMSR773_AOI01_DEL_MONIT03_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT03_maximumFloodExtentA_v1",
-          "EMSR773_AOI01_DEL_MONIT03_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT03_observedEventA_v1",
-          "EMSR773_AOI01_DEL_MONIT04_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT04_maximumFloodExtentA_v1",
-          "EMSR773_AOI01_DEL_MONIT04_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT04_observedEventA_v1",
-          "EMSR773_AOI01_DEL_PRODUCT_observedEventA_v1.shp:EMSR773_AOI01_DEL_PRODUCT_observedEventA_v1",
-          "EMSR773_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR773_AOI03_DEL_PRODUCT_observedEventA_v1"
-        ],
-        "valid_cells": 38269,
+        "frozen_file": "Valencia_2024_labels.gpkg",
+        "sha256": "48f52f5eb190a928",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 2220,
         "gt_tier": "A_authoritative",
+        "valid_cells": 38269,
+        "coverage_fraction": 1.0,
+        "coverage_polygons": 6,
         "attempts": [
           {
-            "source": "copernicus_ems",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 10477,
             "prevalence": 0.2737725051608351,
@@ -578,33 +562,17 @@
               "points_inside_grid": 0,
               "positive_cells": 10477,
               "prevalence": 0.2737725051608351,
-              "source": "copernicus_ems",
+              "source": "canonical_gpkg",
               "features": 2220,
               "point_buffer_m": 0.0,
-              "activation": "EMSR773",
-              "archives": [
-                "EMSR773_AOI01_DEL_PRODUCT_v1.zip",
-                "EMSR773_AOI01_DEL_MONIT01_v1.zip",
-                "EMSR773_AOI01_DEL_MONIT02_v1.zip",
-                "EMSR773_AOI01_DEL_MONIT03_v1.zip",
-                "EMSR773_AOI01_DEL_MONIT04_v1.zip",
-                "EMSR773_AOI03_DEL_PRODUCT_v1.zip"
-              ],
-              "n_archives_listed": 9,
-              "layers": [
-                "EMSR773_AOI01_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT01_maximumFloodExtentA_v1",
-                "EMSR773_AOI01_DEL_MONIT01_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT01_observedEventA_v1",
-                "EMSR773_AOI01_DEL_MONIT02_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT02_maximumFloodExtentA_v1",
-                "EMSR773_AOI01_DEL_MONIT02_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT02_observedEventA_v1",
-                "EMSR773_AOI01_DEL_MONIT03_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT03_maximumFloodExtentA_v1",
-                "EMSR773_AOI01_DEL_MONIT03_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT03_observedEventA_v1",
-                "EMSR773_AOI01_DEL_MONIT04_maximumFloodExtentA_v1.shp:EMSR773_AOI01_DEL_MONIT04_maximumFloodExtentA_v1",
-                "EMSR773_AOI01_DEL_MONIT04_observedEventA_v1.shp:EMSR773_AOI01_DEL_MONIT04_observedEventA_v1",
-                "EMSR773_AOI01_DEL_PRODUCT_observedEventA_v1.shp:EMSR773_AOI01_DEL_PRODUCT_observedEventA_v1",
-                "EMSR773_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR773_AOI03_DEL_PRODUCT_observedEventA_v1"
-              ],
+              "frozen_file": "Valencia_2024_labels.gpkg",
+              "sha256": "48f52f5eb190a928",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 2220,
+              "gt_tier": "A_authoritative",
               "valid_cells": 38269,
-              "gt_tier": "A_authoritative"
+              "coverage_fraction": 1.0,
+              "coverage_polygons": 6
             }
           }
         ]
@@ -666,8 +634,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 13,
-        "cache_hits": 12726,
+        "geocoder_calls": 0,
+        "cache_hits": 12739,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -849,8 +817,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T12:46:18",
-      "acquired_utc": "2026-10-06T14:57:24",
+      "analysed_utc": "2026-10-11T18:15:16",
+      "acquired_utc": "2026-10-10T06:05:31",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -883,44 +851,54 @@
       "label_corr_range_m": 8000.0,
       "cv_tile_m": 4000.0,
       "cv_tile_rule": "correlogram range 8000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 41040,
+        "study_area_cells": 38269,
+        "analysed_cells": 32585,
+        "study_area_share_of_raster": 0.9325,
+        "analysed_share_of_raster": 0.794,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": 0.07676482356078781,
+          "estimate": 0.07523487337803009,
           "ci95": [
-            -0.02299529993663041,
-            0.17283059566388873
+            -0.024525250119388144,
+            0.171300645481131
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.17934746317033445,
+          "estimate": 0.1757730045664232,
           "ci95": [
-            -0.07267782655039813,
-            0.33353998226078274
+            -0.07716372507969464,
+            0.3309647419654218
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.03826805746306038,
+          "estimate": 0.0381533005909359,
           "ci95": [
-            -0.0031843681759196954,
-            0.10306665299240406
+            -0.0032991250480441763,
+            0.10295189612027957
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.012403722954131684,
+          "estimate": -0.012279582618745892,
           "ci95": [
-            -0.0325583146353401,
-            0.02761291064151248
+            -0.03243417429995431,
+            0.027737050976898273
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.0036713660664844296,
+          "estimate": -0.004821304515048369,
           "ci95": [
-            -0.02379871193546404,
-            0.08226633545662326
+            -0.02494865038402798,
+            0.08111639700805932
           ],
           "verdict": "inconclusive"
         },
@@ -936,42 +914,42 @@
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": 0.07676482356078781,
+          "estimate": 0.07523487337803009,
           "ci95": [
-            -0.02299529993663041,
-            0.17283059566388873
+            -0.024525250119388144,
+            0.171300645481131
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.17934746317033445,
+          "estimate": 0.1757730045664232,
           "ci95": [
-            -0.07267782655039813,
-            0.33353998226078274
+            -0.07716372507969464,
+            0.3309647419654218
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.03826805746306038,
+          "estimate": 0.0381533005909359,
           "ci95": [
-            -0.0031843681759196954,
-            0.10306665299240406
+            -0.0032991250480441763,
+            0.10295189612027957
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.012403722954131684,
+          "estimate": -0.012279582618745892,
           "ci95": [
-            -0.0325583146353401,
-            0.02761291064151248
+            -0.03243417429995431,
+            0.027737050976898273
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.0036713660664844296,
+          "estimate": -0.004821304515048369,
           "ci95": [
-            -0.02379871193546404,
-            0.08226633545662326
+            -0.02494865038402798,
+            0.08111639700805932
           ],
           "verdict": "inconclusive"
         },
@@ -995,28 +973,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.7011165533214679,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "EmiliaRomagna_2023a": {
       "city": "EmiliaRomagna_2023a",
       "event_date": "2023-05-03",
       "profile": "full",
       "stage_keys": {
-        "grid": "469a6dfcbb",
-        "physical": "c66ea94b7e",
-        "labels": "a9fd03e580"
-      },
-      "bounds_from_label": {
-        "source": "copernicus_ems",
-        "features": 406,
-        "activation": "EMSR659",
-        "archives": [
-          "EMSR659_AOI01_DEL_PRODUCT_v2.zip",
-          "EMSR659_AOI02_DEL_PRODUCT_v2.zip",
-          "EMSR659_AOI03_DEL_PRODUCT_v1.zip",
-          "EMSR659_AOI04_DEL_PRODUCT_v1.zip"
-        ],
-        "n_archives_listed": 4
+        "grid": "d82ee58a5f",
+        "physical": "bd2ae38243",
+        "labels": "fc6a47a66e"
       },
       "study_box": {
         "min_lon": 11.58295,
@@ -1057,33 +1023,25 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "copernicus_ems",
-      "label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 2576,
         "prevalence": 0.017973514184842523,
-        "source": "copernicus_ems",
+        "source": "canonical_gpkg",
         "features": 406,
         "point_buffer_m": 0.0,
-        "activation": "EMSR659",
-        "archives": [
-          "EMSR659_AOI01_DEL_PRODUCT_v2.zip",
-          "EMSR659_AOI02_DEL_PRODUCT_v2.zip",
-          "EMSR659_AOI03_DEL_PRODUCT_v1.zip",
-          "EMSR659_AOI04_DEL_PRODUCT_v1.zip"
-        ],
-        "n_archives_listed": 4,
-        "layers": [
-          "EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2",
-          "EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2",
-          "EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1",
-          "EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1"
-        ],
-        "valid_cells": 19586,
+        "frozen_file": "EmiliaRomagna_2023a_labels.gpkg",
+        "sha256": "d980855996bddb91",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 406,
         "gt_tier": "A_authoritative",
+        "valid_cells": 19586,
+        "coverage_fraction": 0.1367,
+        "coverage_polygons": 4,
         "attempts": [
           {
-            "source": "copernicus_ems",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 2576,
             "prevalence": 0.13152251608291637,
@@ -1093,25 +1051,17 @@
               "points_inside_grid": 0,
               "positive_cells": 2576,
               "prevalence": 0.017973514184842523,
-              "source": "copernicus_ems",
+              "source": "canonical_gpkg",
               "features": 406,
               "point_buffer_m": 0.0,
-              "activation": "EMSR659",
-              "archives": [
-                "EMSR659_AOI01_DEL_PRODUCT_v2.zip",
-                "EMSR659_AOI02_DEL_PRODUCT_v2.zip",
-                "EMSR659_AOI03_DEL_PRODUCT_v1.zip",
-                "EMSR659_AOI04_DEL_PRODUCT_v1.zip"
-              ],
-              "n_archives_listed": 4,
-              "layers": [
-                "EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI01_DEL_PRODUCT_observedEventA_v2",
-                "EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2.shp:EMSR659_AOI02_DEL_PRODUCT_observedEventA_v2",
-                "EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI03_DEL_PRODUCT_observedEventA_v1",
-                "EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1.shp:EMSR659_AOI04_DEL_PRODUCT_observedEventA_v1"
-              ],
+              "frozen_file": "EmiliaRomagna_2023a_labels.gpkg",
+              "sha256": "d980855996bddb91",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 406,
+              "gt_tier": "A_authoritative",
               "valid_cells": 19586,
-              "gt_tier": "A_authoritative"
+              "coverage_fraction": 0.1367,
+              "coverage_polygons": 4
             }
           }
         ]
@@ -1173,8 +1123,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 21,
-        "cache_hits": 255,
+        "geocoder_calls": 0,
+        "cache_hits": 276,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -1355,8 +1305,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T12:49:52",
-      "acquired_utc": "2026-10-06T15:15:27",
+      "analysed_utc": "2026-10-11T18:18:07",
+      "acquired_utc": "2026-10-10T06:05:39",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -1388,46 +1338,56 @@
       "label_corr_range_m": 3000.0,
       "cv_tile_m": 2500.0,
       "cv_tile_rule": "correlogram range 3000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 153639,
+        "study_area_cells": 143322,
+        "analysed_cells": 19566,
+        "study_area_share_of_raster": 0.9328,
+        "analysed_share_of_raster": 0.1274,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": -0.007808284631365278,
+          "estimate": 0.012203063026904763,
           "ci95": [
-            -0.04953292775343944,
-            0.022836824623898664
+            -0.029521580095169395,
+            0.0428481722821687
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.017617536683622242,
+          "estimate": 0.027533308617549497,
           "ci95": [
-            -0.10063243815280175,
-            0.0623455506702207
+            -0.05760952582131406,
+            0.12348316836991932
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.1388392647866929,
+          "estimate": -0.05494079980229738,
           "ci95": [
-            -0.1619729339028317,
-            0.017420551956574878
+            -0.0780744689184362,
+            0.1013190169409704
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.010943686949165787,
+          "estimate": -0.0021178830617739532,
           "ci95": [
-            -0.016109213889150886,
-            0.00926712660656653
+            -0.007283410001759049,
+            0.018092930493958364
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.0021617382927578248,
+          "estimate": -0.024776235761241945,
           "ci95": [
-            -0.024871612537428728,
-            0.026374696799144646
+            -0.0518095865914285,
+            -0.0005632772548551249
           ],
-          "verdict": "inconclusive"
+          "verdict": "harmful"
         },
         "dAP_adr_legacy_fm": {
           "estimate": -0.055274675332403767,
@@ -1441,44 +1401,44 @@
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": -0.007808284631365278,
+          "estimate": 0.012203063026904763,
           "ci95": [
-            -0.04953292775343944,
-            0.022836824623898664
+            -0.029521580095169395,
+            0.0428481722821687
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.017617536683622242,
+          "estimate": 0.027533308617549497,
           "ci95": [
-            -0.10063243815280175,
-            0.0623455506702207
+            -0.05760952582131406,
+            0.12348316836991932
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.1388392647866929,
+          "estimate": -0.05494079980229738,
           "ci95": [
-            -0.1619729339028317,
-            0.017420551956574878
+            -0.0780744689184362,
+            0.1013190169409704
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.010943686949165787,
+          "estimate": -0.0021178830617739532,
           "ci95": [
-            -0.016109213889150886,
-            0.00926712660656653
+            -0.007283410001759049,
+            0.018092930493958364
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.0021617382927578248,
+          "estimate": -0.024776235761241945,
           "ci95": [
-            -0.024871612537428728,
-            0.026374696799144646
+            -0.0518095865914285,
+            -0.0005632772548551249
           ],
-          "verdict": "inconclusive"
+          "verdict": "harmful"
         },
         "dAP_adr_legacy_fm": {
           "estimate": -0.055274675332403767,
@@ -1500,28 +1460,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.8172334262902402,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "Forli_2023b": {
       "city": "Forli_2023b",
       "event_date": "2023-05-17",
       "profile": "full",
       "stage_keys": {
-        "grid": "a3b8b68b61",
-        "physical": "ee230da4dd",
-        "labels": "a8a952946c"
-      },
-      "bounds_from_label": {
-        "source": "copernicus_ems",
-        "features": 1991,
-        "activation": "EMSR664",
-        "archives": [
-          "EMSR664_AOI01_DEL_PRODUCT_v1.zip",
-          "EMSR664_AOI01_DEL_MONIT01_v1.zip",
-          "EMSR664_AOI01_DEL_MONIT02_v2.zip",
-          "EMSR664_AOI01_DEL_MONIT03_v1.zip"
-        ],
-        "n_archives_listed": 4
+        "grid": "cef2163465",
+        "physical": "18b1d715d7",
+        "labels": "8dd6cba0c4"
       },
       "study_box": {
         "min_lon": 11.81742,
@@ -1562,67 +1510,45 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "copernicus_ems",
-      "label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
-        "positive_cells": 4287,
-        "prevalence": 0.045776339814844476,
-        "source": "copernicus_ems",
-        "features": 2624,
+        "positive_cells": 3856,
+        "prevalence": 0.04117414656543977,
+        "source": "canonical_gpkg",
+        "features": 1991,
         "point_buffer_m": 0.0,
-        "activation": "EMSR664",
-        "archives": [
-          "EMSR664_AOI01_DEL_PRODUCT_v1.zip",
-          "EMSR664_AOI01_DEL_MONIT01_v1.zip",
-          "EMSR664_AOI01_DEL_MONIT02_v2.zip",
-          "EMSR664_AOI01_DEL_MONIT03_v1.zip"
-        ],
-        "n_archives_listed": 4,
-        "layers": [
-          "EMSR664_AOI01_DEL_MONIT01_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_observedEventA_v1",
-          "EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1",
-          "EMSR664_AOI01_DEL_MONIT02_observedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_observedEventA_v2",
-          "EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2",
-          "EMSR664_AOI01_DEL_MONIT03_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_observedEventA_v1",
-          "EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1",
-          "EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1.shp:EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1"
-        ],
-        "valid_cells": 84989,
+        "frozen_file": "Forli_2023b_labels.gpkg",
+        "sha256": "e301d13fb0e7665b",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 1991,
         "gt_tier": "A_authoritative",
+        "valid_cells": 84989,
+        "coverage_fraction": 0.9075,
+        "coverage_polygons": 4,
         "attempts": [
           {
-            "source": "copernicus_ems",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
-            "positives": 4287,
-            "prevalence": 0.050441821882831896,
+            "positives": 3856,
+            "prevalence": 0.045370577368835964,
             "valid_cells": 84989,
             "accepted": true,
             "details": {
               "points_inside_grid": 0,
-              "positive_cells": 4287,
-              "prevalence": 0.045776339814844476,
-              "source": "copernicus_ems",
-              "features": 2624,
+              "positive_cells": 3856,
+              "prevalence": 0.04117414656543977,
+              "source": "canonical_gpkg",
+              "features": 1991,
               "point_buffer_m": 0.0,
-              "activation": "EMSR664",
-              "archives": [
-                "EMSR664_AOI01_DEL_PRODUCT_v1.zip",
-                "EMSR664_AOI01_DEL_MONIT01_v1.zip",
-                "EMSR664_AOI01_DEL_MONIT02_v2.zip",
-                "EMSR664_AOI01_DEL_MONIT03_v1.zip"
-              ],
-              "n_archives_listed": 4,
-              "layers": [
-                "EMSR664_AOI01_DEL_MONIT01_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_observedEventA_v1",
-                "EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT01_previousObservedEventA_v1",
-                "EMSR664_AOI01_DEL_MONIT02_observedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_observedEventA_v2",
-                "EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2.shp:EMSR664_AOI01_DEL_MONIT02_previousObservedEventA_v2",
-                "EMSR664_AOI01_DEL_MONIT03_observedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_observedEventA_v1",
-                "EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1.shp:EMSR664_AOI01_DEL_MONIT03_previousObservedEventA_v1",
-                "EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1.shp:EMSR664_AOI01_DEL_PRODUCT_observedEventA_v1"
-              ],
+              "frozen_file": "Forli_2023b_labels.gpkg",
+              "sha256": "e301d13fb0e7665b",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 1991,
+              "gt_tier": "A_authoritative",
               "valid_cells": 84989,
-              "gt_tier": "A_authoritative"
+              "coverage_fraction": 0.9075,
+              "coverage_polygons": 4
             }
           }
         ]
@@ -1684,8 +1610,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 16,
-        "cache_hits": 2589,
+        "geocoder_calls": 0,
+        "cache_hits": 2605,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -1867,8 +1793,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T12:53:22",
-      "acquired_utc": "2026-10-06T16:00:33",
+      "analysed_utc": "2026-10-11T18:20:52",
+      "acquired_utc": "2026-10-10T06:05:48",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -1895,56 +1821,66 @@
       ],
       "cells_analysed": 84967,
       "cells_excluded": 8684,
-      "data_fingerprint": "a0ae45119a2b6670",
+      "data_fingerprint": "74a924eff27518e8",
       "label_corr_range_m": 2000.0,
       "cv_tile_m": 2000.0,
       "cv_tile_rule": "correlogram range 2000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 101120,
+        "study_area_cells": 93651,
+        "analysed_cells": 84967,
+        "study_area_share_of_raster": 0.9261,
+        "analysed_share_of_raster": 0.8403,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": 0.00059552776558673,
+          "estimate": 0.0010258542734362087,
           "ci95": [
-            -0.0012699488621195252,
-            0.003254000976578994
+            -0.0003267219839547065,
+            0.002485365805666885
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.003660409359013085,
+          "estimate": 0.0074527448206017834,
           "ci95": [
-            -0.00810088290469298,
-            0.019261587347172936
+            -0.0022622370943790908,
+            0.017732079845215333
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.004422680484630122,
+          "estimate": 0.004279318851897035,
           "ci95": [
-            -0.004633177311158058,
-            0.01481947588252616
+            -0.003836643673228205,
+            0.01396254012099824
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0004890437159286408,
+          "estimate": 0.0023970760440596393,
           "ci95": [
-            -0.007918909056608492,
-            0.010699936964543388
+            -0.007575900679323905,
+            0.013038216556967852
           ],
-          "verdict": "saturated"
+          "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.003627667014602944,
+          "estimate": 0.008456068042387523,
           "ci95": [
-            -0.006504935488231064,
-            0.015692613772449668
+            -0.007285304421019037,
+            0.029107366000909705
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.03226406388536529,
+          "estimate": -0.030072980491965107,
           "ci95": [
-            -0.04449154223717731,
-            -0.016817014188088193
+            -0.04430690056109254,
+            -0.015782483134681977
           ],
           "verdict": "harmful"
         }
@@ -1952,58 +1888,58 @@
       "saturation_rung_A_terrain_first": "R4_+forcing",
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": 0.00059552776558673,
+          "estimate": 0.0010258542734362087,
           "ci95": [
-            -0.0012699488621195252,
-            0.003254000976578994
+            -0.0003267219839547065,
+            0.002485365805666885
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.003660409359013085,
+          "estimate": 0.0074527448206017834,
           "ci95": [
-            -0.00810088290469298,
-            0.019261587347172936
+            -0.0022622370943790908,
+            0.017732079845215333
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.004422680484630122,
+          "estimate": 0.004279318851897035,
           "ci95": [
-            -0.004633177311158058,
-            0.01481947588252616
+            -0.003836643673228205,
+            0.01396254012099824
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0004890437159286408,
+          "estimate": 0.0023970760440596393,
           "ci95": [
-            -0.007918909056608492,
-            0.010699936964543388
+            -0.007575900679323905,
+            0.013038216556967852
           ],
-          "verdict": "saturated"
+          "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.003627667014602944,
+          "estimate": 0.008456068042387523,
           "ci95": [
-            -0.006504935488231064,
-            0.015692613772449668
+            -0.007285304421019037,
+            0.029107366000909705
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.03226406388536529,
+          "estimate": -0.030072980491965107,
           "ci95": [
-            -0.04449154223717731,
-            -0.016817014188088193
+            -0.04430690056109254,
+            -0.015782483134681977
           ],
           "verdict": "harmful"
         }
       },
-      "saturation_rung_B_surface_first": "R1_+surface",
+      "saturation_rung_B_surface_first": "R4_+hydrography",
       "fold_prevalence_range": [
-        0.0386,
-        0.0918
+        0.0402,
+        0.0911
       ],
       "population": {
         "source": "ghsl",
@@ -2011,16 +1947,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.2384098518430582,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "York_2015": {
       "city": "York_2015",
       "event_date": "2015-12-27",
       "profile": "full",
       "stage_keys": {
-        "grid": "6242360124",
-        "physical": "e39ce64f06",
-        "labels": "07d93e298f"
+        "grid": "5ca50aa46b",
+        "physical": "9fae66be28",
+        "labels": "06d48b40da"
       },
       "study_box": {
         "min_lon": -1.15,
@@ -2061,29 +1997,24 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "file_url:ea",
-      "label_source": "file_url:ea",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 514,
         "prevalence": 0.0475002310322521,
-        "source": "file_url",
+        "source": "canonical_gpkg",
         "features": 1,
         "point_buffer_m": 0.0,
-        "files": [
-          {
-            "name": "EA_RFO_4084890_OuseDerwent_2015-12-25.geojson",
-            "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.27083?f=json",
-            "sha256": "f947819777adc9de650c846f6467526699e43590b5198c1b7508264a72eaf414",
-            "features": 1
-          }
-        ],
+        "frozen_file": "York_2015_labels.gpkg",
+        "sha256": "888bb6595a5d2aae",
+        "frozen_source": "file_url:ea",
+        "features_in_bbox": 1,
         "gt_tier": "A_authoritative",
-        "geom_types": [
-          "MultiPolygon"
-        ],
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
         "attempts": [
           {
-            "source": "file_url:ea",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 514,
             "prevalence": 0.0475002310322521,
@@ -2093,21 +2024,16 @@
               "points_inside_grid": 0,
               "positive_cells": 514,
               "prevalence": 0.0475002310322521,
-              "source": "file_url",
+              "source": "canonical_gpkg",
               "features": 1,
               "point_buffer_m": 0.0,
-              "files": [
-                {
-                  "name": "EA_RFO_4084890_OuseDerwent_2015-12-25.geojson",
-                  "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.27083?f=json",
-                  "sha256": "f947819777adc9de650c846f6467526699e43590b5198c1b7508264a72eaf414",
-                  "features": 1
-                }
-              ],
+              "frozen_file": "York_2015_labels.gpkg",
+              "sha256": "888bb6595a5d2aae",
+              "frozen_source": "file_url:ea",
+              "features_in_bbox": 1,
               "gt_tier": "A_authoritative",
-              "geom_types": [
-                "MultiPolygon"
-              ]
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
             }
           }
         ]
@@ -2171,8 +2097,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 143,
-        "cache_hits": 4099,
+        "geocoder_calls": 0,
+        "cache_hits": 4242,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -2347,8 +2273,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T13:07:25",
-      "acquired_utc": "2026-10-06T16:37:21",
+      "analysed_utc": "2026-10-11T18:23:39",
+      "acquired_utc": "2026-10-10T06:05:59",
       "label_caveat": null,
       "evaluable_social_layer": false,
       "sanitised_columns": [
@@ -2376,44 +2302,54 @@
       "label_corr_range_m": 1500.0,
       "cv_tile_m": 2000.0,
       "cv_tile_rule": "correlogram range 1500 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 11628,
+        "study_area_cells": 10821,
+        "analysed_cells": 10820,
+        "study_area_share_of_raster": 0.9306,
+        "analysed_share_of_raster": 0.9305,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": 0.03373790533692556,
+          "estimate": 0.03688731592539975,
           "ci95": [
-            0.002305776348745533,
-            0.0519021269531925
+            0.005455186937219721,
+            0.05505153754166668
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.13180798385518064,
+          "estimate": 0.1441121697805766,
           "ci95": [
-            0.009222290269461362,
-            0.2247186526025004
+            0.027503357140345932,
+            0.23976063144705848
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.03686711205482503,
+          "estimate": 0.03319921325542986,
           "ci95": [
-            0.02519950435007804,
-            0.06989882450547895
+            0.021531605550682877,
+            0.06623092570608378
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.004173417214006912,
+          "estimate": 0.005404465727863728,
           "ci95": [
-            -0.024446821656089843,
-            0.020284032044365227
+            -0.023215773142233026,
+            0.021515080558222044
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009049945528371236,
+          "estimate": -0.010404207282350808,
           "ci95": [
-            -0.03298150071192444,
-            0.03905187541434706
+            -0.03433576246590401,
+            0.037697613660367495
           ],
           "verdict": "inconclusive"
         },
@@ -2429,42 +2365,42 @@
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": 0.03373790533692556,
+          "estimate": 0.03688731592539975,
           "ci95": [
-            0.002305776348745533,
-            0.0519021269531925
+            0.005455186937219721,
+            0.05505153754166668
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.13180798385518064,
+          "estimate": 0.1441121697805766,
           "ci95": [
-            0.009222290269461362,
-            0.2247186526025004
+            0.027503357140345932,
+            0.23976063144705848
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.03686711205482503,
+          "estimate": 0.03319921325542986,
           "ci95": [
-            0.02519950435007804,
-            0.06989882450547895
+            0.021531605550682877,
+            0.06623092570608378
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.004173417214006912,
+          "estimate": 0.005404465727863728,
           "ci95": [
-            -0.024446821656089843,
-            0.020284032044365227
+            -0.023215773142233026,
+            0.021515080558222044
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009049945528371236,
+          "estimate": -0.010404207282350808,
           "ci95": [
-            -0.03298150071192444,
-            0.03905187541434706
+            -0.03433576246590401,
+            0.037697613660367495
           ],
           "verdict": "inconclusive"
         },
@@ -2488,16 +2424,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.4897633792189106,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "Carlisle_2015": {
       "city": "Carlisle_2015",
       "event_date": "2015-12-05",
       "profile": "full",
       "stage_keys": {
-        "grid": "f7bf5a6d38",
-        "physical": "08c10d0851",
-        "labels": "a15ad78bd5"
+        "grid": "4bc1f26076",
+        "physical": "40c7476a5d",
+        "labels": "1f0b18a054"
       },
       "study_box": {
         "min_lon": -3.03,
@@ -2538,29 +2474,24 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "file_url:ea",
-      "label_source": "file_url:ea",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 1234,
         "prevalence": 0.08791052219135143,
-        "source": "file_url",
+        "source": "canonical_gpkg",
         "features": 1,
         "point_buffer_m": 0.0,
-        "files": [
-          {
-            "name": "EA_RFO_4078182_Carlisle_2015-12-05.geojson",
-            "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.26355?f=json",
-            "sha256": "357aab8fbb88d65e60732c858e5a59a49af7ab9130eafb32dcffab366d2bd2a9",
-            "features": 1
-          }
-        ],
+        "frozen_file": "Carlisle_2015_labels.gpkg",
+        "sha256": "81413b4c6f3c76de",
+        "frozen_source": "file_url:ea",
+        "features_in_bbox": 1,
         "gt_tier": "A_authoritative",
-        "geom_types": [
-          "MultiPolygon"
-        ],
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
         "attempts": [
           {
-            "source": "file_url:ea",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 1234,
             "prevalence": 0.08791052219135143,
@@ -2570,21 +2501,16 @@
               "points_inside_grid": 0,
               "positive_cells": 1234,
               "prevalence": 0.08791052219135143,
-              "source": "file_url",
+              "source": "canonical_gpkg",
               "features": 1,
               "point_buffer_m": 0.0,
-              "files": [
-                {
-                  "name": "EA_RFO_4078182_Carlisle_2015-12-05.geojson",
-                  "url": "https://environment.data.gov.uk/spatialdata/recorded-flood-outlines/ogc/features/v1/collections/Recorded_Flood_Outlines/items/Recorded_Flood_Outlines.26355?f=json",
-                  "sha256": "357aab8fbb88d65e60732c858e5a59a49af7ab9130eafb32dcffab366d2bd2a9",
-                  "features": 1
-                }
-              ],
+              "frozen_file": "Carlisle_2015_labels.gpkg",
+              "sha256": "81413b4c6f3c76de",
+              "frozen_source": "file_url:ea",
+              "features_in_bbox": 1,
               "gt_tier": "A_authoritative",
-              "geom_types": [
-                "MultiPolygon"
-              ]
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
             }
           }
         ]
@@ -2647,8 +2573,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 83,
-        "cache_hits": 2627,
+        "geocoder_calls": 0,
+        "cache_hits": 2710,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -2820,8 +2746,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T13:38:09",
-      "acquired_utc": "2026-10-06T16:52:41",
+      "analysed_utc": "2026-10-11T18:26:20",
+      "acquired_utc": "2026-10-10T06:06:05",
       "label_caveat": null,
       "evaluable_social_layer": false,
       "sanitised_columns": [
@@ -2849,44 +2775,54 @@
       "label_corr_range_m": 4000.0,
       "cv_tile_m": 2000.0,
       "cv_tile_rule": "correlogram range 4000 m; fewer than 15 flooded tiles even at larger sizes: default tile",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 14391,
+        "study_area_cells": 14037,
+        "analysed_cells": 14029,
+        "study_area_share_of_raster": 0.9754,
+        "analysed_share_of_raster": 0.9748,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": 0.00788704638592913,
+          "estimate": 0.0104385820767013,
           "ci95": [
-            -0.3900538170557924,
-            0.25908824023767374
+            -0.3875022813650202,
+            0.26163977592844595
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.014569221603092496,
+          "estimate": 0.019282505523088127,
           "ci95": [
-            -0.5370304291637464,
-            0.5873448954632395
+            -0.5335575434467169,
+            0.5941669685415784
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.010879196260961538,
+          "estimate": 0.011022441194670184,
           "ci95": [
-            -0.02684289375572906,
-            0.05334558040510735
+            -0.026699648822020413,
+            0.05348882533881599
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0034052951955340083,
+          "estimate": 0.0035903413330654124,
           "ci95": [
-            -0.021321500501816467,
-            0.05851048258562919
+            -0.021136454364285063,
+            0.05869552872316059
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.025549665117226058,
+          "estimate": 0.02561967479986021,
           "ci95": [
-            0.007166566704924861,
-            0.0733410576272164
+            0.007236576387559014,
+            0.07341106730985056
           ],
           "verdict": "informative"
         },
@@ -2902,42 +2838,42 @@
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": 0.00788704638592913,
+          "estimate": 0.0104385820767013,
           "ci95": [
-            -0.3900538170557924,
-            0.25908824023767374
+            -0.3875022813650202,
+            0.26163977592844595
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.014569221603092496,
+          "estimate": 0.019282505523088127,
           "ci95": [
-            -0.5370304291637464,
-            0.5873448954632395
+            -0.5335575434467169,
+            0.5941669685415784
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.010879196260961538,
+          "estimate": 0.011022441194670184,
           "ci95": [
-            -0.02684289375572906,
-            0.05334558040510735
+            -0.026699648822020413,
+            0.05348882533881599
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0034052951955340083,
+          "estimate": 0.0035903413330654124,
           "ci95": [
-            -0.021321500501816467,
-            0.05851048258562919
+            -0.021136454364285063,
+            0.05869552872316059
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.025549665117226058,
+          "estimate": 0.02561967479986021,
           "ci95": [
-            0.007166566704924861,
-            0.0733410576272164
+            0.007236576387559014,
+            0.07341106730985056
           ],
           "verdict": "informative"
         },
@@ -2961,22 +2897,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.9865234705922196,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "PortoAlegre_2024": {
       "city": "PortoAlegre_2024",
       "event_date": "2024-05-05",
       "profile": "full",
       "stage_keys": {
-        "grid": "55bc7810da",
-        "physical": "6901d37a67",
-        "labels": "6c6d53742b"
-      },
-      "bounds_from_label": {
-        "source": "arcgis_featureserver",
-        "features": 13011,
-        "service": "https://arcgis.jrc.ec.europa.eu/server/rest/services/Hosted/EMSN194_Vector_Layers/FeatureServer",
-        "gt_tier": "A_authoritative"
+        "grid": "c36a05bc17",
+        "physical": "c8b2db03fd",
+        "labels": "b468ed0f54"
       },
       "study_box": {
         "min_lon": -51.314,
@@ -3016,47 +2946,41 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "arcgis_featureserver",
-      "label_source": "arcgis_featureserver",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
-        "positive_cells": 32319,
-        "prevalence": 0.22787460868093748,
-        "source": "arcgis_featureserver",
-        "features": 13466,
+        "positive_cells": 32156,
+        "prevalence": 0.22672532927207603,
+        "source": "canonical_gpkg",
+        "features": 13011,
         "point_buffer_m": 0.0,
-        "service": "https://arcgis.jrc.ec.europa.eu/server/rest/services/Hosted/EMSN194_Vector_Layers/FeatureServer",
-        "layers": [
-          "Extent Temporal Evolution 04/05/2024",
-          "Extent Temporal Evolution 06/05/2024",
-          "Extent Temporal Evolution 08/05/2024",
-          "Extent Temporal Evolution 10/05/2024"
-        ],
+        "frozen_file": "PortoAlegre_2024_labels.gpkg",
+        "sha256": "cad983007692c2a2",
+        "frozen_source": "arcgis_featureserver",
+        "features_in_bbox": 13011,
         "gt_tier": "A_authoritative",
         "valid_cells": 91562,
         "coverage_fraction": 0.6456,
         "coverage_polygons": 4,
         "attempts": [
           {
-            "source": "arcgis_featureserver",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
-            "positives": 32316,
-            "prevalence": 0.35294117647058826,
+            "positives": 32153,
+            "prevalence": 0.3511609619711234,
             "valid_cells": 91562,
             "accepted": true,
             "details": {
               "points_inside_grid": 0,
-              "positive_cells": 32319,
-              "prevalence": 0.22787460868093748,
-              "source": "arcgis_featureserver",
-              "features": 13466,
+              "positive_cells": 32156,
+              "prevalence": 0.22672532927207603,
+              "source": "canonical_gpkg",
+              "features": 13011,
               "point_buffer_m": 0.0,
-              "service": "https://arcgis.jrc.ec.europa.eu/server/rest/services/Hosted/EMSN194_Vector_Layers/FeatureServer",
-              "layers": [
-                "Extent Temporal Evolution 04/05/2024",
-                "Extent Temporal Evolution 06/05/2024",
-                "Extent Temporal Evolution 08/05/2024",
-                "Extent Temporal Evolution 10/05/2024"
-              ],
+              "frozen_file": "PortoAlegre_2024_labels.gpkg",
+              "sha256": "cad983007692c2a2",
+              "frozen_source": "arcgis_featureserver",
+              "features_in_bbox": 13011,
               "gt_tier": "A_authoritative",
               "valid_cells": 91562,
               "coverage_fraction": 0.6456,
@@ -3120,8 +3044,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 59,
-        "cache_hits": 978,
+        "geocoder_calls": 0,
+        "cache_hits": 1037,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -3303,8 +3227,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T13:41:35",
-      "acquired_utc": "2026-10-06T17:18:15",
+      "analysed_utc": "2026-10-11T18:28:57",
+      "acquired_utc": "2026-10-10T06:06:12",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -3330,56 +3254,66 @@
       ],
       "cells_analysed": 79961,
       "cells_excluded": 61867,
-      "data_fingerprint": "5f51843681718501",
+      "data_fingerprint": "89a8a8a063a8fac8",
       "label_corr_range_m": NaN,
       "cv_tile_m": 4000.0,
       "cv_tile_rule": "autocorrelation never fell below 0.1 within the correlogram's range: maximum tile",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 142824,
+        "study_area_cells": 141828,
+        "analysed_cells": 79961,
+        "study_area_share_of_raster": 0.993,
+        "analysed_share_of_raster": 0.5599,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": -0.0001268963174213524,
+          "estimate": 0.00019136032357960724,
           "ci95": [
-            -0.0009977192984994465,
-            0.0005211322798453587
+            -0.0005132074156767255,
+            0.0007360718191609817
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.0004902329018029326,
+          "estimate": 0.0007557477700739466,
           "ci95": [
-            -0.0037868203485584588,
-            0.0019537350756298243
+            -0.001983586414737963,
+            0.0029843268170716406
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": -5.687261864882427e-05,
+          "estimate": 9.406936695923426e-05,
           "ci95": [
-            -0.00047709624726928007,
-            0.0002905982174527911
+            -0.00042635611486998047,
+            0.00042015264806360075
           ],
           "verdict": "saturated"
         },
         "dAP_gated_fm": {
-          "estimate": 3.640897671692575e-05,
+          "estimate": 5.96755844047993e-05,
           "ci95": [
-            3.640897671692575e-05,
-            3.640897671692575e-05
+            5.96755844047993e-05,
+            5.96755844047993e-05
           ],
           "verdict": "saturated"
         },
         "dAP_early_fm": {
-          "estimate": 0.00021570186221717247,
+          "estimate": -0.0001033894480182429,
           "ci95": [
-            -0.0008560678701573277,
-            0.0016780318060875962
+            -0.0025616926948123725,
+            0.0014580322164152197
           ],
           "verdict": "saturated"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.11109365168214158,
+          "estimate": -0.09637320923128379,
           "ci95": [
-            -0.13023327712137442,
-            -0.08687049315774038
+            -0.11205644668653808,
+            -0.07676243919274302
           ],
           "verdict": "harmful"
         }
@@ -3387,58 +3321,58 @@
       "saturation_rung_A_terrain_first": "R0_none",
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": -0.0001268963174213524,
+          "estimate": 0.00019136032357960724,
           "ci95": [
-            -0.0009977192984994465,
-            0.0005211322798453587
+            -0.0005132074156767255,
+            0.0007360718191609817
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.0004902329018029326,
+          "estimate": 0.0007557477700739466,
           "ci95": [
-            -0.0037868203485584588,
-            0.0019537350756298243
+            -0.001983586414737963,
+            0.0029843268170716406
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": -5.687261864882427e-05,
+          "estimate": 9.406936695923426e-05,
           "ci95": [
-            -0.00047709624726928007,
-            0.0002905982174527911
+            -0.00042635611486998047,
+            0.00042015264806360075
           ],
           "verdict": "saturated"
         },
         "dAP_gated_fm": {
-          "estimate": 3.640897671692575e-05,
+          "estimate": 5.96755844047993e-05,
           "ci95": [
-            3.640897671692575e-05,
-            3.640897671692575e-05
+            5.96755844047993e-05,
+            5.96755844047993e-05
           ],
           "verdict": "saturated"
         },
         "dAP_early_fm": {
-          "estimate": 0.00021570186221717247,
+          "estimate": -0.0001033894480182429,
           "ci95": [
-            -0.0008560678701573277,
-            0.0016780318060875962
+            -0.0025616926948123725,
+            0.0014580322164152197
           ],
           "verdict": "saturated"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.11109365168214158,
+          "estimate": -0.09637320923128379,
           "ci95": [
-            -0.13023327712137442,
-            -0.08687049315774038
+            -0.11205644668653808,
+            -0.07676243919274302
           ],
           "verdict": "harmful"
         }
       },
-      "saturation_rung_B_surface_first": "R3_+terrain",
+      "saturation_rung_B_surface_first": "R2_+forcing",
       "fold_prevalence_range": [
-        0.3738,
-        0.4384
+        0.3643,
+        0.4572
       ],
       "population": {
         "source": "ghsl",
@@ -3446,27 +3380,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.5111346591641076,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "TaquariValley_2024": {
       "city": "TaquariValley_2024",
       "event_date": "2024-05-02",
       "profile": "full",
       "stage_keys": {
-        "grid": "fe733ff879",
-        "physical": "193578d7af",
-        "labels": "11d8d0e3e0"
-      },
-      "bounds_from_label": {
-        "source": "copernicus_ems",
-        "features": 641,
-        "activation": "EMSR720",
-        "archives": [
-          "EMSR720_AOI02_DEL_PRODUCT_v1.zip",
-          "EMSR720_AOI02_DEL_MONIT01_v1.zip",
-          "EMSR720_AOI03_DEL_PRODUCT_v1.zip"
-        ],
-        "n_archives_listed": 3
+        "grid": "b1147904ff",
+        "physical": "4270429ec5",
+        "labels": "3d0132670a"
       },
       "study_box": {
         "min_lon": -51.92378,
@@ -3506,32 +3429,25 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "copernicus_ems",
-      "label_source": "copernicus_ems",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 463,
         "prevalence": 0.03349489980467337,
-        "source": "copernicus_ems",
+        "source": "canonical_gpkg",
         "features": 641,
         "point_buffer_m": 0.0,
-        "activation": "EMSR720",
-        "archives": [
-          "EMSR720_AOI02_DEL_PRODUCT_v1.zip",
-          "EMSR720_AOI02_DEL_MONIT01_v1.zip",
-          "EMSR720_AOI03_DEL_PRODUCT_v1.zip"
-        ],
-        "n_archives_listed": 3,
-        "layers": [
-          "EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1",
-          "EMSR720_AOI02_DEL_MONIT01_observedEventA_v1.shp:EMSR720_AOI02_DEL_MONIT01_observedEventA_v1",
-          "EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1",
-          "EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1"
-        ],
-        "valid_cells": 5032,
+        "frozen_file": "TaquariValley_2024_labels.gpkg",
+        "sha256": "05fb9942022bcd99",
+        "frozen_source": "copernicus_ems",
+        "features_in_bbox": 641,
         "gt_tier": "A_authoritative",
+        "valid_cells": 5032,
+        "coverage_fraction": 0.364,
+        "coverage_polygons": 3,
         "attempts": [
           {
-            "source": "copernicus_ems",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 463,
             "prevalence": 0.09201112877583466,
@@ -3541,24 +3457,17 @@
               "points_inside_grid": 0,
               "positive_cells": 463,
               "prevalence": 0.03349489980467337,
-              "source": "copernicus_ems",
+              "source": "canonical_gpkg",
               "features": 641,
               "point_buffer_m": 0.0,
-              "activation": "EMSR720",
-              "archives": [
-                "EMSR720_AOI02_DEL_PRODUCT_v1.zip",
-                "EMSR720_AOI02_DEL_MONIT01_v1.zip",
-                "EMSR720_AOI03_DEL_PRODUCT_v1.zip"
-              ],
-              "n_archives_listed": 3,
-              "layers": [
-                "EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1.shp:EMSR720_AOI02_DEL_MONIT01_maximumFloodExtentA_v1",
-                "EMSR720_AOI02_DEL_MONIT01_observedEventA_v1.shp:EMSR720_AOI02_DEL_MONIT01_observedEventA_v1",
-                "EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI02_DEL_PRODUCT_observedEventA_v1",
-                "EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1.shp:EMSR720_AOI03_DEL_PRODUCT_observedEventA_v1"
-              ],
+              "frozen_file": "TaquariValley_2024_labels.gpkg",
+              "sha256": "05fb9942022bcd99",
+              "frozen_source": "copernicus_ems",
+              "features_in_bbox": 641,
+              "gt_tier": "A_authoritative",
               "valid_cells": 5032,
-              "gt_tier": "A_authoritative"
+              "coverage_fraction": 0.364,
+              "coverage_polygons": 3
             }
           }
         ]
@@ -3619,8 +3528,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 20,
-        "cache_hits": 364,
+        "geocoder_calls": 0,
+        "cache_hits": 384,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -3775,8 +3684,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T16:22:48",
-      "acquired_utc": "2026-10-07T12:45:55",
+      "analysed_utc": "2026-10-11T18:31:40",
+      "acquired_utc": "2026-10-10T06:06:19",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -3806,44 +3715,54 @@
       "label_corr_range_m": 1000.0,
       "cv_tile_m": 2000.0,
       "cv_tile_rule": "correlogram range 1000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 14250,
+        "study_area_cells": 13823,
+        "analysed_cells": 4832,
+        "study_area_share_of_raster": 0.97,
+        "analysed_share_of_raster": 0.3391,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": -0.011282516286896697,
+          "estimate": -0.01230880849764683,
           "ci95": [
-            -0.030851452630439594,
-            0.004010025676667043
+            -0.03187774484118973,
+            0.0029837334659169107
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.049783099420329,
+          "estimate": -0.0543115225010402,
           "ci95": [
-            -0.12227881066433097,
-            0.02405759198782826
+            -0.12683604338808366,
+            0.018095438872532302
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.02687037876873291,
+          "estimate": -0.011120472203926542,
           "ci95": [
-            -0.04689812852191574,
-            0.026263440245631
+            -0.031148221957109368,
+            0.04201334681043737
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.03700156985652088,
+          "estimate": -0.03218292181193242,
           "ci95": [
-            -0.03967291354504968,
-            0.020185241950324433
+            -0.03485426550046122,
+            0.025003889994912893
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.009500601016819646,
+          "estimate": 0.013741622627988021,
           "ci95": [
-            -0.014483849224603756,
-            0.03115671575454178
+            -0.01024282761343538,
+            0.03539773736571016
           ],
           "verdict": "inconclusive"
         },
@@ -3859,42 +3778,42 @@
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": -0.011282516286896697,
+          "estimate": -0.01230880849764683,
           "ci95": [
-            -0.030851452630439594,
-            0.004010025676667043
+            -0.03187774484118973,
+            0.0029837334659169107
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.049783099420329,
+          "estimate": -0.0543115225010402,
           "ci95": [
-            -0.12227881066433097,
-            0.02405759198782826
+            -0.12683604338808366,
+            0.018095438872532302
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.02687037876873291,
+          "estimate": -0.011120472203926542,
           "ci95": [
-            -0.04689812852191574,
-            0.026263440245631
+            -0.031148221957109368,
+            0.04201334681043737
           ],
           "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.03700156985652088,
+          "estimate": -0.03218292181193242,
           "ci95": [
-            -0.03967291354504968,
-            0.020185241950324433
+            -0.03485426550046122,
+            0.025003889994912893
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": 0.009500601016819646,
+          "estimate": 0.013741622627988021,
           "ci95": [
-            -0.014483849224603756,
-            0.03115671575454178
+            -0.01024282761343538,
+            0.03539773736571016
           ],
           "verdict": "inconclusive"
         },
@@ -3918,29 +3837,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.9122043563610529,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "Houston_SanJacinto_2017": {
       "city": "Houston_SanJacinto_2017",
       "event_date": "2017-08-29",
       "profile": "full",
       "stage_keys": {
-        "grid": "a8acabcecf",
-        "physical": "c28a3846eb",
-        "labels": "28237f4e23"
-      },
-      "bounds_from_label": {
-        "source": "usgs_sciencebase",
-        "features": 1,
-        "item": "5aa023ebe4b0b1c392e6881b",
-        "title": "San Jacinto River",
-        "files_used": [
-          "San_Jacinto.zip"
-        ],
-        "n_rasters": 0,
-        "depth_min_m": 0.0,
-        "raster_coverage": false,
-        "point_buffer_m": 0.0
+        "grid": "05112b5552",
+        "physical": "91f8e4a939",
+        "labels": "98b935e54b"
       },
       "study_box": {
         "min_lon": -95.72658,
@@ -3960,7 +3866,7 @@
       },
       "n_cells": 184495,
       "physical_meta": {
-        "s1_event_scenes": 5
+        "s1_event_scenes": 4
       },
       "physical_columns": [
         "elev_m",
@@ -3981,30 +3887,25 @@
       ],
       "gt_tier": "A_authoritative",
       "effective_label_source": "usgs_sciencebase",
-      "label_source": "usgs_sciencebase",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
         "positive_cells": 27568,
         "prevalence": 0.14942410363424483,
-        "source": "usgs_sciencebase",
+        "source": "canonical_gpkg",
         "features": 1,
         "point_buffer_m": 0.0,
-        "item": "5aa023ebe4b0b1c392e6881b",
-        "title": "San Jacinto River",
-        "files_used": [
-          "San_Jacinto.zip"
-        ],
-        "n_rasters": 0,
-        "depth_min_m": 0.0,
-        "raster_coverage": false,
-        "rasters_used": 0,
+        "frozen_file": "Houston_SanJacinto_2017_labels.gpkg",
+        "sha256": "afa29f9508dec87e",
+        "frozen_source": "usgs_sciencebase",
+        "features_in_bbox": 1,
+        "gt_tier": "A_authoritative",
         "valid_cells": 89388,
         "coverage_fraction": 0.4845,
         "coverage_polygons": 1,
-        "gt_tier": "A_authoritative",
         "attempts": [
           {
-            "source": "usgs_sciencebase",
+            "source": "canonical_gpkg",
             "gt_tier": "A_authoritative",
             "positives": 27565,
             "prevalence": 0.30837472591399295,
@@ -4014,22 +3915,17 @@
               "points_inside_grid": 0,
               "positive_cells": 27568,
               "prevalence": 0.14942410363424483,
-              "source": "usgs_sciencebase",
+              "source": "canonical_gpkg",
               "features": 1,
               "point_buffer_m": 0.0,
-              "item": "5aa023ebe4b0b1c392e6881b",
-              "title": "San Jacinto River",
-              "files_used": [
-                "San_Jacinto.zip"
-              ],
-              "n_rasters": 0,
-              "depth_min_m": 0.0,
-              "raster_coverage": false,
-              "rasters_used": 0,
+              "frozen_file": "Houston_SanJacinto_2017_labels.gpkg",
+              "sha256": "afa29f9508dec87e",
+              "frozen_source": "usgs_sciencebase",
+              "features_in_bbox": 1,
+              "gt_tier": "A_authoritative",
               "valid_cells": 89388,
               "coverage_fraction": 0.4845,
-              "coverage_polygons": 1,
-              "gt_tier": "A_authoritative"
+              "coverage_polygons": 1
             }
           }
         ]
@@ -4093,8 +3989,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 41,
-        "cache_hits": 43375,
+        "geocoder_calls": 0,
+        "cache_hits": 43416,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -4283,8 +4179,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T16:45:16",
-      "acquired_utc": "2026-10-07T15:54:06",
+      "analysed_utc": "2026-10-11T18:34:16",
+      "acquired_utc": "2026-10-10T06:06:30",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -4316,44 +4212,54 @@
       "label_corr_range_m": 4000.0,
       "cv_tile_m": 3500.0,
       "cv_tile_rule": "correlogram range 4000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 192712,
+        "study_area_cells": 184495,
+        "analysed_cells": 87395,
+        "study_area_share_of_raster": 0.9574,
+        "analysed_share_of_raster": 0.4535,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": 0.002255648378924567,
+          "estimate": 0.0020201091954696764,
           "ci95": [
-            0.0008739137980703273,
-            0.003654562881943681
+            0.0006383746146154368,
+            0.00341902369848879
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.006529132486026336,
+          "estimate": 0.00584734779440669,
           "ci95": [
-            0.002574192047061659,
-            0.010538827069577154
+            0.0018807761018905422,
+            0.009865658431482101
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.003437304427716794,
+          "estimate": 0.0030232696947088606,
           "ci95": [
-            0.0012254668481981082,
-            0.005962865619147351
+            0.000811432115190175,
+            0.005548830886139417
           ],
-          "verdict": "informative"
+          "verdict": "saturated"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0009378423591272214,
+          "estimate": 0.001105575801190029,
           "ci95": [
-            -0.0013792404512571585,
-            0.0033487563087175446
+            -0.001211507009194351,
+            0.003516489750780352
           ],
           "verdict": "saturated"
         },
         "dAP_early_fm": {
-          "estimate": 0.0019592031721642747,
+          "estimate": 0.0021906821740007355,
           "ci95": [
-            -0.00353921908913906,
-            0.007230323329108769
+            -0.003307740087302599,
+            0.00746180233094523
           ],
           "verdict": "saturated"
         },
@@ -4369,42 +4275,42 @@
       "saturation_rung_A_terrain_first": "R0_none",
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": 0.002255648378924567,
+          "estimate": 0.0020201091954696764,
           "ci95": [
-            0.0008739137980703273,
-            0.003654562881943681
+            0.0006383746146154368,
+            0.00341902369848879
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": 0.006529132486026336,
+          "estimate": 0.00584734779440669,
           "ci95": [
-            0.002574192047061659,
-            0.010538827069577154
+            0.0018807761018905422,
+            0.009865658431482101
           ],
           "verdict": "saturated"
         },
         "dAP_stacked_fm": {
-          "estimate": 0.003437304427716794,
+          "estimate": 0.0030232696947088606,
           "ci95": [
-            0.0012254668481981082,
-            0.005962865619147351
+            0.000811432115190175,
+            0.005548830886139417
           ],
-          "verdict": "informative"
+          "verdict": "saturated"
         },
         "dAP_gated_fm": {
-          "estimate": 0.0009378423591272214,
+          "estimate": 0.001105575801190029,
           "ci95": [
-            -0.0013792404512571585,
-            0.0033487563087175446
+            -0.001211507009194351,
+            0.003516489750780352
           ],
           "verdict": "saturated"
         },
         "dAP_early_fm": {
-          "estimate": 0.0019592031721642747,
+          "estimate": 0.0021906821740007355,
           "ci95": [
-            -0.00353921908913906,
-            0.007230323329108769
+            -0.003307740087302599,
+            0.00746180233094523
           ],
           "verdict": "saturated"
         },
@@ -4428,16 +4334,16 @@
         "native_m": 100
       },
       "social_population_spearman": 0.45459244293721435,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     },
     "Jakarta_2020": {
       "city": "Jakarta_2020",
       "event_date": "2020-01-01",
       "profile": "full",
       "stage_keys": {
-        "grid": "0f9d472438",
-        "physical": "fc1e238c99",
-        "labels": "d1c45cb5e0"
+        "grid": "b7e5eaea45",
+        "physical": "2f6db2ccbf",
+        "labels": "0ae40afbf3"
       },
       "study_box": {
         "min_lon": 106.68,
@@ -4478,41 +4384,43 @@
       ],
       "gt_tier": "B_crowdsourced",
       "effective_label_source": "petabencana_area",
-      "label_source": "petabencana_area",
+      "label_source": "canonical_gpkg",
       "label_info": {
         "points_inside_grid": 0,
-        "positive_cells": 1054,
-        "prevalence": 0.014708139713372686,
-        "source": "petabencana_reports",
+        "positive_cells": 2520,
+        "prevalence": 0.03516557123121363,
+        "source": "canonical_gpkg",
         "features": 255,
-        "point_buffer_m": 150.0,
-        "endpoint": "reports/archive",
-        "window": [
-          "2019-12-31 00:00:00",
-          "2020-01-04 23:59:59.999999"
-        ],
+        "point_buffer_m": 250.0,
+        "frozen_file": "Jakarta_2020_labels.gpkg",
+        "sha256": "b7e93dd03f9c2e09",
+        "frozen_source": "petabencana_area",
+        "features_in_bbox": 255,
         "gt_tier": "B_crowdsourced",
+        "coverage_polygons": 0,
+        "coverage_fraction": 1.0,
         "attempts": [
           {
-            "source": "petabencana_area",
+            "source": "canonical_gpkg",
             "gt_tier": "B_crowdsourced",
-            "positives": 1054,
-            "prevalence": 0.014708139713372686,
+            "positives": 2520,
+            "prevalence": 0.03516557123121363,
             "valid_cells": 71661,
             "accepted": true,
             "details": {
               "points_inside_grid": 0,
-              "positive_cells": 1054,
-              "prevalence": 0.014708139713372686,
-              "source": "petabencana_reports",
+              "positive_cells": 2520,
+              "prevalence": 0.03516557123121363,
+              "source": "canonical_gpkg",
               "features": 255,
-              "point_buffer_m": 150.0,
-              "endpoint": "reports/archive",
-              "window": [
-                "2019-12-31 00:00:00",
-                "2020-01-04 23:59:59.999999"
-              ],
-              "gt_tier": "B_crowdsourced"
+              "point_buffer_m": 250.0,
+              "frozen_file": "Jakarta_2020_labels.gpkg",
+              "sha256": "b7e93dd03f9c2e09",
+              "frozen_source": "petabencana_area",
+              "features_in_bbox": 255,
+              "gt_tier": "B_crowdsourced",
+              "coverage_polygons": 0,
+              "coverage_fraction": 1.0
             }
           }
         ]
@@ -4572,8 +4480,8 @@
         "source": "geonames"
       },
       "geocoding": {
-        "geocoder_calls": 25,
-        "cache_hits": 20406,
+        "geocoder_calls": 0,
+        "cache_hits": 20431,
         "lookups_capped": 0,
         "lookups_failed": 0,
         "ner_failed": 0,
@@ -4748,8 +4656,8 @@
         "complete": true,
         "pending": []
       },
-      "analysed_utc": "2026-10-08T19:44:22",
-      "acquired_utc": "2026-10-07T16:41:44",
+      "analysed_utc": "2026-10-11T18:37:06",
+      "acquired_utc": "2026-10-10T06:06:41",
       "label_caveat": null,
       "evaluable_social_layer": true,
       "sanitised_columns": [
@@ -4778,115 +4686,125 @@
       ],
       "cells_analysed": 63941,
       "cells_excluded": 7720,
-      "data_fingerprint": "2e1499e810e65418",
-      "label_corr_range_m": 1000.0,
+      "data_fingerprint": "7fcff98e56b0a7d7",
+      "label_corr_range_m": 2000.0,
       "cv_tile_m": 2000.0,
-      "cv_tile_rule": "correlogram range 1000 m",
+      "cv_tile_rule": "correlogram range 2000 m",
+      "null_raster": {
+        "mode": "full_raster",
+        "raster_cells": 114988,
+        "study_area_cells": 71661,
+        "analysed_cells": 63941,
+        "study_area_share_of_raster": 0.6232,
+        "analysed_share_of_raster": 0.5561,
+        "social_layer": "kernel density of the mentions on the complete rectangle",
+        "population_layer": "known on the study-area cells, 0 outside them"
+      },
       "top_rung_A_terrain_first": {
         "info_nats_fm": {
-          "estimate": -0.0014324305378909225,
+          "estimate": -0.002463341005313201,
           "ci95": [
-            -0.0031114039885742507,
-            0.00016534515721989998
+            -0.0060755549047304905,
+            0.0016900426037244844
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.010863628955451362,
+          "estimate": -0.00890727418315236,
           "ci95": [
-            -0.026292440259665505,
-            0.0011627371340150027
+            -0.022799484610335707,
+            0.00591513794694977
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.021794996845841064,
+          "estimate": -0.012068753678374452,
           "ci95": [
-            -0.027618267438854642,
-            -0.009768351073802462
+            -0.027214206693768152,
+            0.005394186804145965
           ],
-          "verdict": "harmful"
+          "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.004541038511000358,
+          "estimate": -0.009726903842001613,
           "ci95": [
-            -0.014499129225799396,
-            0.004026650296878445
+            -0.01513369177705798,
+            0.0026779732882394078
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009771451988563003,
+          "estimate": -0.0057624344656501784,
           "ci95": [
-            -0.023205387813331806,
-            0.005558554809855118
+            -0.022298487280927353,
+            0.016585799497146524
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.0013656692182637542,
+          "estimate": -0.013745167081009091,
           "ci95": [
-            -0.0033250432416816024,
-            0.0010293045672003036
+            -0.02448443572654211,
+            -0.0016560268568465615
           ],
-          "verdict": "saturated"
+          "verdict": "harmful"
         }
       },
       "saturation_rung_A_terrain_first": null,
       "top_rung_B_surface_first": {
         "info_nats_fm": {
-          "estimate": -0.0014324305378909225,
+          "estimate": -0.002463341005313201,
           "ci95": [
-            -0.0031114039885742507,
-            0.00016534515721989998
+            -0.0060755549047304905,
+            0.0016900426037244844
           ],
           "verdict": "inconclusive"
         },
         "info_frac_fm": {
-          "estimate": -0.010863628955451362,
+          "estimate": -0.00890727418315236,
           "ci95": [
-            -0.026292440259665505,
-            0.0011627371340150027
+            -0.022799484610335707,
+            0.00591513794694977
           ],
           "verdict": "inconclusive"
         },
         "dAP_stacked_fm": {
-          "estimate": -0.021794996845841064,
+          "estimate": -0.012068753678374452,
           "ci95": [
-            -0.027618267438854642,
-            -0.009768351073802462
+            -0.027214206693768152,
+            0.005394186804145965
           ],
-          "verdict": "harmful"
+          "verdict": "inconclusive"
         },
         "dAP_gated_fm": {
-          "estimate": -0.004541038511000358,
+          "estimate": -0.009726903842001613,
           "ci95": [
-            -0.014499129225799396,
-            0.004026650296878445
+            -0.01513369177705798,
+            0.0026779732882394078
           ],
           "verdict": "inconclusive"
         },
         "dAP_early_fm": {
-          "estimate": -0.009771451988563003,
+          "estimate": -0.0057624344656501784,
           "ci95": [
-            -0.023205387813331806,
-            0.005558554809855118
+            -0.022298487280927353,
+            0.016585799497146524
           ],
           "verdict": "inconclusive"
         },
         "dAP_adr_legacy_fm": {
-          "estimate": -0.0013656692182637542,
+          "estimate": -0.013745167081009091,
           "ci95": [
-            -0.0033250432416816024,
-            0.0010293045672003036
+            -0.02448443572654211,
+            -0.0016560268568465615
           ],
-          "verdict": "saturated"
+          "verdict": "harmful"
         }
       },
       "saturation_rung_B_surface_first": null,
       "fold_prevalence_range": [
-        0.0085,
-        0.046
+        0.0122,
+        0.0945
       ],
       "population": {
         "source": "ghsl",
@@ -4894,10 +4812,10 @@
         "native_m": 100
       },
       "social_population_spearman": 0.7564326657329884,
-      "pipeline_version": "v6.1.1"
+      "pipeline_version": "v6.1.2"
     }
   },
-  "finished_utc": "2026-10-08T21:51:46.906604",
+  "finished_utc": "2026-10-11T20:51:25.483273",
   "earlier_sessions": [
     {
       "prereg_sha256": "5e1633391bbc99bb56ea3fb24368d7d4fd757696b9517a8839f7bcb8ef613e3d",
@@ -4916,6 +4834,12 @@
       "profile": "full",
       "started_utc": "2026-10-06T04:22:30.075729",
       "finished_utc": "2026-10-06T05:02:25.169847"
+    },
+    {
+      "prereg_sha256": "d55d6b06f265a6eb75a37e7e15b45662cee256a0012af33effb8f8cb007ef828",
+      "profile": "full",
+      "started_utc": "2026-10-08T12:42:22.705958",
+      "finished_utc": "2026-10-08T21:51:46.906604"
     }
   ]
 }

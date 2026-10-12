@@ -1,0 +1,46 @@
+{
+ "toponym_data": {
+  "files": [
+   "toponym_data.py"
+  ],
+  "sha256": "90c5996202803724f9e2033c65f9b88684bfbd0781a5f1b2a830331a9e382a71",
+  "bytes": 13895
+ },
+ "pipeline_helpers": {
+  "files": [
+   "pipeline_helpers.py"
+  ],
+  "sha256": "675758f2ea0f676bcb3cbd089cfefd70b6db404ce9a9d200f6b7ff768fc62cff",
+  "bytes": 8700
+ },
+ "saturation_core": {
+  "files": [
+   "saturation_core.part01of02.py",
+   "saturation_core.part02of02.py"
+  ],
+  "sha256": "7d4455083c55ace464ff8effe8263bcc0b672e291ff9ff8aadb70e03ad44e1c3",
+  "bytes": 60781
+ },
+ "data_sources": {
+  "files": [
+   "data_sources.part01of06.py",
+   "data_sources.part02of06.py",
+   "data_sources.part03of06.py",
+   "data_sources.part04of06.py",
+   "data_sources.part05of06.py",
+   "data_sources.part06of06.py"
+  ],
+  "sha256": "e8340aa27143b582e848b7f773566760ba3970315a85896c6ad289300059c9d7",
+  "bytes": 211241
+ },
+ "orchestrator": {
+  "files": [
+   "orchestrator.part01of04.py",
+   "orchestrator.part02of04.py",
+   "orchestrator.part03of04.py",
+   "orchestrator.part04of04.py"
+  ],
+  "sha256": "fac2ffef93fffd78b8e7d684def4de1cd76d3211ffd7a53ff24ff303e49d7e81",
+  "bytes": 138456
+ }
+}
